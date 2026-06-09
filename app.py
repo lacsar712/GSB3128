@@ -226,6 +226,7 @@ def exam_results_api(eid):
     if eid not in exams: return jsonify({"error":"未找到"}), 404
     import random
     exam = exams[eid]
+    pass_score = exam.get('grading_settings', {}).get('pass_score', 60)
     results = []
     for s in exam.get('students', []):
         score = random.randint(30,100)
@@ -238,7 +239,8 @@ def exam_results_api(eid):
     return jsonify({"results": results, "stats": {"avg": round(avg,1),
                      "max": max((r['score'] for r in results), default=0),
                      "min": min((r['score'] for r in results), default=0),
-                     "pass_rate": round(sum(1 for r in results if r['score']>=60)/max(len(results),1)*100,1),
+                     "pass_rate": round(sum(1 for r in results if r['score']>=pass_score)/max(len(results),1)*100,1),
+                     "pass_score": pass_score,
                      "total": len(results)}})
 
 @app.route('/api/exams/<eid>/grade', methods=['POST'])

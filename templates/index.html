@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="智慧教学平台 - Python课程、软件测试、Selenium自动化、云端编程、智能考试管理">
+    <title>智慧教学平台</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+</head>
+
+<body>
+    <div class="toast-container" id="toastContainer"></div>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modalBox">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3><button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-footer" id="modalFooter"></div>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <h1><i class="ri-graduation-cap-fill"></i> 智慧教学平台</h1>
+            <p>Smart Teaching Platform</p>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-item active" data-section="dashboard"><i class="ri-dashboard-3-line"></i><span>数据概览</span>
+            </div>
+            <div class="nav-item" data-section="exercises"><i class="ri-code-s-slash-line"></i><span>Python练习</span>
+            </div>
+            <div class="nav-item" data-section="projects"><i class="ri-folder-chart-line"></i><span>实践项目</span></div>
+            <div class="nav-item" data-section="questions"><i class="ri-questionnaire-line"></i><span>测试题库</span></div>
+            <div class="nav-item" data-section="selenium"><i class="ri-robot-2-line"></i><span>Selenium课程</span></div>
+            <div class="nav-item" data-section="ide"><i class="ri-terminal-box-line"></i><span>云端编程</span></div>
+            <div class="nav-item" data-section="exams"><i class="ri-file-list-3-line"></i><span>考试管理</span></div>
+        </nav>
+        <div class="sidebar-stats" id="sidebarStats"></div>
+    </aside>
+
+    <div class="main">
+        <header class="header">
+            <h2 id="pageTitle">数据概览</h2>
+            <div class="header-actions"><span style="font-size:13px;color:var(--text3)" id="currentTime"></span></div>
+        </header>
+        <div class="content">
+            <!-- Dashboard -->
+            <div class="section active" id="sec-dashboard"></div>
+            <!-- Exercises -->
+            <div class="section" id="sec-exercises"></div>
+            <!-- Projects -->
+            <div class="section" id="sec-projects"></div>
+            <!-- Questions -->
+            <div class="section" id="sec-questions"></div>
+            <!-- Selenium -->
+            <div class="section" id="sec-selenium"></div>
+            <!-- IDE -->
+            <div class="section" id="sec-ide">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchIDETab('python')">Python</button>
+                    <button class="tab-btn" onclick="switchIDETab('linux')">Linux终端</button>
+                </div>
+                <div class="tab-content active" id="ide-python">
+                    <div class="code-editor">
+                        <div class="code-toolbar"><span class="lang-label">Python 3</span>
+                            <div style="display:flex;gap:8px">
+                                <button class="btn btn-sm btn-outline" onclick="clearCode()"><i
+                                        class="ri-delete-bin-line"></i> 清空</button>
+                                <button class="btn btn-sm btn-primary" onclick="runCode('python')"><i
+                                        class="ri-play-fill"></i> 运行</button>
+                            </div>
+                        </div>
+                        <textarea class="code-textarea" id="pythonCode" placeholder="# 在此编写Python代码..."
+                            spellcheck="false">print("Hello, World!")</textarea>
+                        <div class="form-group" style="padding:0 16px 8px"><label>标准输入 (可选)</label><input class="input"
+                                id="pythonStdin" placeholder="程序的标准输入..."></div>
+                        <div class="code-output" id="pythonOutput">等待运行...</div>
+                    </div>
+                </div>
+                <div class="tab-content" id="ide-linux">
+                    <div class="code-editor">
+                        <div class="code-toolbar"><span class="lang-label">Bash</span>
+                            <div style="display:flex;gap:8px">
+                                <button class="btn btn-sm btn-outline"
+                                    onclick="document.getElementById('linuxCode').value=''"><i
+                                        class="ri-delete-bin-line"></i> 清空</button>
+                                <button class="btn btn-sm btn-success" onclick="runCode('bash')"><i
+                                        class="ri-play-fill"></i> 执行</button>
+                            </div>
+                        </div>
+                        <textarea class="code-textarea" id="linuxCode" placeholder="# 在此输入Linux命令..."
+                            spellcheck="false">echo "Hello Linux"
+ls -la
+python3 --version</textarea>
+                        <div class="code-output" id="linuxOutput">等待执行...</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Exams -->
+            <div class="section" id="sec-exams"></div>
+        </div>
+    </div>
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  teaching-platform:
+    build: .
+    ports:
+      - "3128:3128"
+    restart: unless-stopped
+    environment:
+      - FLASK_ENV=production

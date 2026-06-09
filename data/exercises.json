@@ -1,0 +1,2510 @@
+[
+ {
+  "id": 1,
+  "title": "交换两个变量的值",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【变量与数据类型】交换两个变量的值\n\n请编写Python程序完成以下功能：\n根据题目要求实现交换两个变量的值的功能。",
+  "solution": "a,b=int(input()),int(input())\na,b=b,a\nprint(a,b)",
+  "test_cases": []
+ },
+ {
+  "id": 2,
+  "title": "判断数据类型",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【变量与数据类型】判断数据类型\n\n请编写Python程序完成以下功能：\n根据题目要求实现判断数据类型的功能。",
+  "solution": "x=input()\ntry:\n    int(x);print('整数')\nexcept:\n    try:\n        float(x);print('浮点数')\n    except:\n        print('字符串')",
+  "test_cases": []
+ },
+ {
+  "id": 3,
+  "title": "温度转换(摄氏转华氏)",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【变量与数据类型】温度转换(摄氏转华氏)\n\n请编写Python程序完成以下功能：\n根据题目要求实现温度转换(摄氏转华氏)的功能。",
+  "solution": "c=float(input())\nprint(round(c*9/5+32,2))",
+  "test_cases": []
+ },
+ {
+  "id": 4,
+  "title": "计算圆的面积",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【变量与数据类型】计算圆的面积\n\n请编写Python程序完成以下功能：\n根据题目要求实现计算圆的面积的功能。",
+  "solution": "import math\nr=float(input())\nprint(round(math.pi*r**2,2))",
+  "test_cases": []
+ },
+ {
+  "id": 5,
+  "title": "多变量赋值与输出",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【变量与数据类型】多变量赋值与输出\n\n请编写Python程序完成以下功能：\n根据题目要求实现多变量赋值与输出的功能。",
+  "solution": "a,b,c=1,2.0,'hello'\nprint(type(a).__name__,type(b).__name__,type(c).__name__)",
+  "test_cases": []
+ },
+ {
+  "id": 6,
+  "title": "进制转换",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【变量与数据类型】进制转换\n\n请编写Python程序完成以下功能：\n根据题目要求实现进制转换的功能。",
+  "solution": "n=int(input())\nprint(bin(n),oct(n),hex(n))",
+  "test_cases": []
+ },
+ {
+  "id": 7,
+  "title": "ASCII码转换",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【变量与数据类型】ASCII码转换\n\n请编写Python程序完成以下功能：\n根据题目要求实现ASCII码转换的功能。",
+  "solution": "c=input()\nprint(ord(c))",
+  "test_cases": []
+ },
+ {
+  "id": 8,
+  "title": "复数运算",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【变量与数据类型】复数运算\n\n请编写Python程序完成以下功能：\n根据题目要求实现复数运算的功能。",
+  "solution": "a=complex(input())\nb=complex(input())\nprint(a+b)",
+  "test_cases": []
+ },
+ {
+  "id": 9,
+  "title": "变量值判断",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【变量与数据类型】变量值判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现变量值判断的功能。",
+  "solution": "x=eval(input())\nprint(isinstance(x,int))",
+  "test_cases": []
+ },
+ {
+  "id": 10,
+  "title": "字节与字符串转换",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【变量与数据类型】字节与字符串转换\n\n请编写Python程序完成以下功能：\n根据题目要求实现字节与字符串转换的功能。",
+  "solution": "s=input()\nb=s.encode('utf-8')\nprint(len(b))",
+  "test_cases": []
+ },
+ {
+  "id": 11,
+  "title": "数值格式化输出",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【变量与数据类型】数值格式化输出\n\n请编写Python程序完成以下功能：\n根据题目要求实现数值格式化输出的功能。",
+  "solution": "n=float(input())\nprint(f'{n:.2f}')",
+  "test_cases": []
+ },
+ {
+  "id": 12,
+  "title": "布尔值运算",
+  "category": "变量与数据类型",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【变量与数据类型】布尔值运算\n\n请编写Python程序完成以下功能：\n根据题目要求实现布尔值运算的功能。",
+  "solution": "a,b=map(int,input().split())\nprint(bool(a) and bool(b))",
+  "test_cases": []
+ },
+ {
+  "id": 13,
+  "title": "变量与数据类型概念题1",
+  "category": "变量与数据类型",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 变量与数据类型的说法，哪个是正确的？",
+  "options": [
+   "A. 变量与数据类型是Python的基础特性",
+   "B. 变量与数据类型不支持嵌套操作",
+   "C. 变量与数据类型只能用于数值类型",
+   "D. 变量与数据类型不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。变量与数据类型是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 14,
+  "title": "变量与数据类型概念题2",
+  "category": "变量与数据类型",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 变量与数据类型的说法，哪个是正确的？",
+  "options": [
+   "A. 变量与数据类型是Python的基础特性",
+   "B. 变量与数据类型不支持嵌套操作",
+   "C. 变量与数据类型只能用于数值类型",
+   "D. 变量与数据类型不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。变量与数据类型是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 15,
+  "title": "变量与数据类型概念题3",
+  "category": "变量与数据类型",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 变量与数据类型的说法，哪个是正确的？",
+  "options": [
+   "A. 变量与数据类型是Python的基础特性",
+   "B. 变量与数据类型不支持嵌套操作",
+   "C. 变量与数据类型只能用于数值类型",
+   "D. 变量与数据类型不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。变量与数据类型是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 16,
+  "title": "计算BMI指数",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【运算符与表达式】计算BMI指数\n\n请编写Python程序完成以下功能：\n根据题目要求实现计算BMI指数的功能。",
+  "solution": "h,w=map(float,input().split())\nprint(round(w/h**2,2))",
+  "test_cases": []
+ },
+ {
+  "id": 17,
+  "title": "判断奇偶数",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【运算符与表达式】判断奇偶数\n\n请编写Python程序完成以下功能：\n根据题目要求实现判断奇偶数的功能。",
+  "solution": "n=int(input())\nprint('偶数' if n%2==0 else '奇数')",
+  "test_cases": []
+ },
+ {
+  "id": 18,
+  "title": "求最大公约数",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【运算符与表达式】求最大公约数\n\n请编写Python程序完成以下功能：\n根据题目要求实现求最大公约数的功能。",
+  "solution": "import math\na,b=map(int,input().split())\nprint(math.gcd(a,b))",
+  "test_cases": []
+ },
+ {
+  "id": 19,
+  "title": "位运算实践",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【运算符与表达式】位运算实践\n\n请编写Python程序完成以下功能：\n根据题目要求实现位运算实践的功能。",
+  "solution": "a,b=map(int,input().split())\nprint(a&b,a|b,a^b)",
+  "test_cases": []
+ },
+ {
+  "id": 20,
+  "title": "幂运算",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【运算符与表达式】幂运算\n\n请编写Python程序完成以下功能：\n根据题目要求实现幂运算的功能。",
+  "solution": "a,b=map(int,input().split())\nprint(a**b)",
+  "test_cases": []
+ },
+ {
+  "id": 21,
+  "title": "整除与取余",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【运算符与表达式】整除与取余\n\n请编写Python程序完成以下功能：\n根据题目要求实现整除与取余的功能。",
+  "solution": "a,b=map(int,input().split())\nprint(a//b,a%b)",
+  "test_cases": []
+ },
+ {
+  "id": 22,
+  "title": "三元表达式应用",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【运算符与表达式】三元表达式应用\n\n请编写Python程序完成以下功能：\n根据题目要求实现三元表达式应用的功能。",
+  "solution": "a,b=map(int,input().split())\nprint(a if a>b else b)",
+  "test_cases": []
+ },
+ {
+  "id": 23,
+  "title": "复合赋值运算",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【运算符与表达式】复合赋值运算\n\n请编写Python程序完成以下功能：\n根据题目要求实现复合赋值运算的功能。",
+  "solution": "n=int(input())\nn+=5;n*=2;n-=3\nprint(n)",
+  "test_cases": []
+ },
+ {
+  "id": 24,
+  "title": "逻辑运算组合",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【运算符与表达式】逻辑运算组合\n\n请编写Python程序完成以下功能：\n根据题目要求实现逻辑运算组合的功能。",
+  "solution": "a,b,c=map(int,input().split())\nprint(a>b and b>c)",
+  "test_cases": []
+ },
+ {
+  "id": 25,
+  "title": "海伦公式求三角形面积",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【运算符与表达式】海伦公式求三角形面积\n\n请编写Python程序完成以下功能：\n根据题目要求实现海伦公式求三角形面积的功能。",
+  "solution": "import math\na,b,c=map(float,input().split())\ns=(a+b+c)/2\nprint(round(math.sqrt(s*(s-a)*(s-b)*(s-c)),2))",
+  "test_cases": []
+ },
+ {
+  "id": 26,
+  "title": "数学表达式计算",
+  "category": "运算符与表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【运算符与表达式】数学表达式计算\n\n请编写Python程序完成以下功能：\n根据题目要求实现数学表达式计算的功能。",
+  "solution": "import math\nx=float(input())\nprint(round(math.sin(x)**2+math.cos(x)**2,2))",
+  "test_cases": []
+ },
+ {
+  "id": 27,
+  "title": "运算符与表达式概念题1",
+  "category": "运算符与表达式",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 运算符与表达式的说法，哪个是正确的？",
+  "options": [
+   "A. 运算符与表达式是Python的基础特性",
+   "B. 运算符与表达式不支持嵌套操作",
+   "C. 运算符与表达式只能用于数值类型",
+   "D. 运算符与表达式不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。运算符与表达式是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 28,
+  "title": "运算符与表达式概念题2",
+  "category": "运算符与表达式",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 运算符与表达式的说法，哪个是正确的？",
+  "options": [
+   "A. 运算符与表达式是Python的基础特性",
+   "B. 运算符与表达式不支持嵌套操作",
+   "C. 运算符与表达式只能用于数值类型",
+   "D. 运算符与表达式不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。运算符与表达式是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 29,
+  "title": "运算符与表达式概念题3",
+  "category": "运算符与表达式",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 运算符与表达式的说法，哪个是正确的？",
+  "options": [
+   "A. 运算符与表达式是Python的基础特性",
+   "B. 运算符与表达式不支持嵌套操作",
+   "C. 运算符与表达式只能用于数值类型",
+   "D. 运算符与表达式不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。运算符与表达式是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 30,
+  "title": "成绩等级判定",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【条件语句】成绩等级判定\n\n请编写Python程序完成以下功能：\n根据题目要求实现成绩等级判定的功能。",
+  "solution": "s=int(input())\nif s>=90:print('A')\nelif s>=80:print('B')\nelif s>=70:print('C')\nelif s>=60:print('D')\nelse:print('F')",
+  "test_cases": []
+ },
+ {
+  "id": 31,
+  "title": "闰年判断",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【条件语句】闰年判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现闰年判断的功能。",
+  "solution": "y=int(input())\nprint('闰年' if (y%4==0 and y%100!=0) or y%400==0 else '平年')",
+  "test_cases": []
+ },
+ {
+  "id": 32,
+  "title": "三角形类型判断",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【条件语句】三角形类型判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现三角形类型判断的功能。",
+  "solution": "a,b,c=sorted(map(int,input().split()))\nif a+b<=c:print('不构成三角形')\nelif a==b==c:print('等边三角形')\nelif a==b or b==c:print('等腰三角形')\nelse:print('一般三角形')",
+  "test_cases": []
+ },
+ {
+  "id": 33,
+  "title": "计算器程序",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【条件语句】计算器程序\n\n请编写Python程序完成以下功能：\n根据题目要求实现计算器程序的功能。",
+  "solution": "a,op,b=input().split()\na,b=float(a),float(b)\nif op=='+':print(a+b)\nelif op=='-':print(a-b)\nelif op=='*':print(a*b)\nelif op=='/':print(a/b if b!=0 else '除数不能为0')",
+  "test_cases": []
+ },
+ {
+  "id": 34,
+  "title": "判断象限",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【条件语句】判断象限\n\n请编写Python程序完成以下功能：\n根据题目要求实现判断象限的功能。",
+  "solution": "x,y=map(float,input().split())\nif x>0 and y>0:print('第一象限')\nelif x<0 and y>0:print('第二象限')\nelif x<0 and y<0:print('第三象限')\nelse:print('第四象限')",
+  "test_cases": []
+ },
+ {
+  "id": 35,
+  "title": "快递费计算",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【条件语句】快递费计算\n\n请编写Python程序完成以下功能：\n根据题目要求实现快递费计算的功能。",
+  "solution": "w=float(input())\nif w<=1:print(10)\nelif w<=5:print(10+(w-1)*3)\nelse:print(10+4*3+(w-5)*5)",
+  "test_cases": []
+ },
+ {
+  "id": 36,
+  "title": "水仙花数判断",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【条件语句】水仙花数判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现水仙花数判断的功能。",
+  "solution": "n=int(input())\nd=len(str(n))\nprint('是' if sum(int(c)**d for c in str(n))==n else '否')",
+  "test_cases": []
+ },
+ {
+  "id": 37,
+  "title": "BMI健康评估",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【条件语句】BMI健康评估\n\n请编写Python程序完成以下功能：\n根据题目要求实现BMI健康评估的功能。",
+  "solution": "bmi=float(input())\nif bmi<18.5:print('偏瘦')\nelif bmi<24:print('正常')\nelif bmi<28:print('偏胖')\nelse:print('肥胖')",
+  "test_cases": []
+ },
+ {
+  "id": 38,
+  "title": "税后工资计算",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【条件语句】税后工资计算\n\n请编写Python程序完成以下功能：\n根据题目要求实现税后工资计算的功能。",
+  "solution": "s=float(input())\nif s<=5000:t=0\nelif s<=8000:t=(s-5000)*0.03\nelif s<=17000:t=(s-5000)*0.1-210\nelse:t=(s-5000)*0.2-1410\nprint(round(s-t,2))",
+  "test_cases": []
+ },
+ {
+  "id": 39,
+  "title": "密码强度检测",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【条件语句】密码强度检测\n\n请编写Python程序完成以下功能：\n根据题目要求实现密码强度检测的功能。",
+  "solution": "p=input()\nscore=0\nif len(p)>=8:score+=1\nif any(c.isupper() for c in p):score+=1\nif any(c.isdigit() for c in p):score+=1\nif any(c in '!@#$%' for c in p):score+=1\nprint(['弱','中','强','很强'][min(score,3)])",
+  "test_cases": []
+ },
+ {
+  "id": 40,
+  "title": "月份天数查询",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【条件语句】月份天数查询\n\n请编写Python程序完成以下功能：\n根据题目要求实现月份天数查询的功能。",
+  "solution": "m=int(input())\ndays=[31,28,31,30,31,30,31,31,30,31,30,31]\nprint(days[m-1])",
+  "test_cases": []
+ },
+ {
+  "id": 41,
+  "title": "石头剪刀布",
+  "category": "条件语句",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【条件语句】石头剪刀布\n\n请编写Python程序完成以下功能：\n根据题目要求实现石头剪刀布的功能。",
+  "solution": "import random\nch=['石头','剪刀','布']\np=input()\nc=random.choice(ch)\nprint(f'电脑出:{c}')",
+  "test_cases": []
+ },
+ {
+  "id": 42,
+  "title": "条件语句概念题1",
+  "category": "条件语句",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 条件语句的说法，哪个是正确的？",
+  "options": [
+   "A. 条件语句是Python的基础特性",
+   "B. 条件语句不支持嵌套操作",
+   "C. 条件语句只能用于数值类型",
+   "D. 条件语句不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。条件语句是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 43,
+  "title": "条件语句概念题2",
+  "category": "条件语句",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 条件语句的说法，哪个是正确的？",
+  "options": [
+   "A. 条件语句是Python的基础特性",
+   "B. 条件语句不支持嵌套操作",
+   "C. 条件语句只能用于数值类型",
+   "D. 条件语句不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。条件语句是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 44,
+  "title": "条件语句概念题3",
+  "category": "条件语句",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 条件语句的说法，哪个是正确的？",
+  "options": [
+   "A. 条件语句是Python的基础特性",
+   "B. 条件语句不支持嵌套操作",
+   "C. 条件语句只能用于数值类型",
+   "D. 条件语句不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。条件语句是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 45,
+  "title": "九九乘法表",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【循环结构】九九乘法表\n\n请编写Python程序完成以下功能：\n根据题目要求实现九九乘法表的功能。",
+  "solution": "for i in range(1,10):\n    for j in range(1,i+1):\n        print(f'{j}x{i}={i*j}',end='\\t')\n    print()",
+  "test_cases": []
+ },
+ {
+  "id": 46,
+  "title": "斐波那契数列",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【循环结构】斐波那契数列\n\n请编写Python程序完成以下功能：\n根据题目要求实现斐波那契数列的功能。",
+  "solution": "n=int(input())\na,b=0,1\nfor _ in range(n):\n    print(a,end=' ')\n    a,b=b,a+b",
+  "test_cases": []
+ },
+ {
+  "id": 47,
+  "title": "质数判断",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【循环结构】质数判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现质数判断的功能。",
+  "solution": "n=int(input())\nif n<2:print('否')\nelse:\n    for i in range(2,int(n**0.5)+1):\n        if n%i==0:print('否');break\n    else:print('是')",
+  "test_cases": []
+ },
+ {
+  "id": 48,
+  "title": "猜数字游戏",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【循环结构】猜数字游戏\n\n请编写Python程序完成以下功能：\n根据题目要求实现猜数字游戏的功能。",
+  "solution": "import random\nt=random.randint(1,100)\nfor i in range(7):\n    g=int(input())\n    if g==t:print('对了');break\n    print('大了' if g>t else '小了')",
+  "test_cases": []
+ },
+ {
+  "id": 49,
+  "title": "杨辉三角",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【循环结构】杨辉三角\n\n请编写Python程序完成以下功能：\n根据题目要求实现杨辉三角的功能。",
+  "solution": "n=int(input())\ntri=[[1]]\nfor i in range(1,n):\n    row=[1]\n    for j in range(1,i):\n        row.append(tri[i-1][j-1]+tri[i-1][j])\n    row.append(1)\n    tri.append(row)\nfor r in tri:print(r)",
+  "test_cases": []
+ },
+ {
+  "id": 50,
+  "title": "冒泡排序",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【循环结构】冒泡排序\n\n请编写Python程序完成以下功能：\n根据题目要求实现冒泡排序的功能。",
+  "solution": "arr=list(map(int,input().split()))\nfor i in range(len(arr)):\n    for j in range(len(arr)-1-i):\n        if arr[j]>arr[j+1]:arr[j],arr[j+1]=arr[j+1],arr[j]\nprint(arr)",
+  "test_cases": []
+ },
+ {
+  "id": 51,
+  "title": "回文数判断",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【循环结构】回文数判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现回文数判断的功能。",
+  "solution": "n=input()\nprint('是回文数' if n==n[::-1] else '不是回文数')",
+  "test_cases": []
+ },
+ {
+  "id": 52,
+  "title": "完美数查找",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【循环结构】完美数查找\n\n请编写Python程序完成以下功能：\n根据题目要求实现完美数查找的功能。",
+  "solution": "n=int(input())\nfor num in range(2,n+1):\n    if sum(i for i in range(1,num) if num%i==0)==num:\n        print(num,end=' ')",
+  "test_cases": []
+ },
+ {
+  "id": 53,
+  "title": "数字金字塔",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【循环结构】数字金字塔\n\n请编写Python程序完成以下功能：\n根据题目要求实现数字金字塔的功能。",
+  "solution": "n=int(input())\nfor i in range(1,n+1):\n    print(' '*(n-i)+' '.join(str(j) for j in range(1,i+1)))",
+  "test_cases": []
+ },
+ {
+  "id": 54,
+  "title": "求阶乘",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【循环结构】求阶乘\n\n请编写Python程序完成以下功能：\n根据题目要求实现求阶乘的功能。",
+  "solution": "n=int(input())\nr=1\nfor i in range(1,n+1):r*=i\nprint(r)",
+  "test_cases": []
+ },
+ {
+  "id": 55,
+  "title": "统计字符频率",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【循环结构】统计字符频率\n\n请编写Python程序完成以下功能：\n根据题目要求实现统计字符频率的功能。",
+  "solution": "s=input()\nfor c in sorted(set(s)):\n    print(f'{c}:{s.count(c)}')",
+  "test_cases": []
+ },
+ {
+  "id": 56,
+  "title": "数列求和",
+  "category": "循环结构",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【循环结构】数列求和\n\n请编写Python程序完成以下功能：\n根据题目要求实现数列求和的功能。",
+  "solution": "n=int(input())\nprint(sum(range(1,n+1)))",
+  "test_cases": []
+ },
+ {
+  "id": 57,
+  "title": "循环结构概念题1",
+  "category": "循环结构",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 循环结构的说法，哪个是正确的？",
+  "options": [
+   "A. 循环结构是Python的基础特性",
+   "B. 循环结构不支持嵌套操作",
+   "C. 循环结构只能用于数值类型",
+   "D. 循环结构不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。循环结构是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 58,
+  "title": "循环结构概念题2",
+  "category": "循环结构",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 循环结构的说法，哪个是正确的？",
+  "options": [
+   "A. 循环结构是Python的基础特性",
+   "B. 循环结构不支持嵌套操作",
+   "C. 循环结构只能用于数值类型",
+   "D. 循环结构不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。循环结构是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 59,
+  "title": "循环结构概念题3",
+  "category": "循环结构",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 循环结构的说法，哪个是正确的？",
+  "options": [
+   "A. 循环结构是Python的基础特性",
+   "B. 循环结构不支持嵌套操作",
+   "C. 循环结构只能用于数值类型",
+   "D. 循环结构不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。循环结构是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 60,
+  "title": "字符串反转",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字符串处理】字符串反转\n\n请编写Python程序完成以下功能：\n根据题目要求实现字符串反转的功能。",
+  "solution": "s=input()\nprint(s[::-1])",
+  "test_cases": []
+ },
+ {
+  "id": 61,
+  "title": "统计单词个数",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字符串处理】统计单词个数\n\n请编写Python程序完成以下功能：\n根据题目要求实现统计单词个数的功能。",
+  "solution": "s=input()\nprint(len(s.split()))",
+  "test_cases": []
+ },
+ {
+  "id": 62,
+  "title": "字符串加密(凯撒密码)",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字符串处理】字符串加密(凯撒密码)\n\n请编写Python程序完成以下功能：\n根据题目要求实现字符串加密(凯撒密码)的功能。",
+  "solution": "s=input();k=int(input())\nprint(''.join(chr((ord(c)-97+k)%26+97) if c.isalpha() else c for c in s))",
+  "test_cases": []
+ },
+ {
+  "id": 63,
+  "title": "回文字符串判断",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字符串处理】回文字符串判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现回文字符串判断的功能。",
+  "solution": "s=input()\nprint('是' if s==s[::-1] else '否')",
+  "test_cases": []
+ },
+ {
+  "id": 64,
+  "title": "提取数字字符",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字符串处理】提取数字字符\n\n请编写Python程序完成以下功能：\n根据题目要求实现提取数字字符的功能。",
+  "solution": "s=input()\nprint(''.join(c for c in s if c.isdigit()))",
+  "test_cases": []
+ },
+ {
+  "id": 65,
+  "title": "首字母大写",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字符串处理】首字母大写\n\n请编写Python程序完成以下功能：\n根据题目要求实现首字母大写的功能。",
+  "solution": "s=input()\nprint(s.title())",
+  "test_cases": []
+ },
+ {
+  "id": 66,
+  "title": "删除指定字符",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字符串处理】删除指定字符\n\n请编写Python程序完成以下功能：\n根据题目要求实现删除指定字符的功能。",
+  "solution": "s,c=input(),input()\nprint(s.replace(c,''))",
+  "test_cases": []
+ },
+ {
+  "id": 67,
+  "title": "字符串压缩",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字符串处理】字符串压缩\n\n请编写Python程序完成以下功能：\n根据题目要求实现字符串压缩的功能。",
+  "solution": "s=input()\nr='';i=0\nwhile i<len(s):\n    c=1\n    while i+c<len(s) and s[i]==s[i+c]:c+=1\n    r+=s[i]+str(c) if c>1 else s[i]\n    i+=c\nprint(r)",
+  "test_cases": []
+ },
+ {
+  "id": 68,
+  "title": "最长单词",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字符串处理】最长单词\n\n请编写Python程序完成以下功能：\n根据题目要求实现最长单词的功能。",
+  "solution": "s=input()\nwords=s.split()\nprint(max(words,key=len))",
+  "test_cases": []
+ },
+ {
+  "id": 69,
+  "title": "统计元音字母",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字符串处理】统计元音字母\n\n请编写Python程序完成以下功能：\n根据题目要求实现统计元音字母的功能。",
+  "solution": "s=input().lower()\nprint(sum(1 for c in s if c in 'aeiou'))",
+  "test_cases": []
+ },
+ {
+  "id": 70,
+  "title": "字符串对齐",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字符串处理】字符串对齐\n\n请编写Python程序完成以下功能：\n根据题目要求实现字符串对齐的功能。",
+  "solution": "s=input();w=int(input())\nprint(s.center(w,'*'))",
+  "test_cases": []
+ },
+ {
+  "id": 71,
+  "title": "子串查找",
+  "category": "字符串处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字符串处理】子串查找\n\n请编写Python程序完成以下功能：\n根据题目要求实现子串查找的功能。",
+  "solution": "s,sub=input(),input()\nprint(s.count(sub))",
+  "test_cases": []
+ },
+ {
+  "id": 72,
+  "title": "字符串处理概念题1",
+  "category": "字符串处理",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字符串处理的说法，哪个是正确的？",
+  "options": [
+   "A. 字符串处理是Python的基础特性",
+   "B. 字符串处理不支持嵌套操作",
+   "C. 字符串处理只能用于数值类型",
+   "D. 字符串处理不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字符串处理是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 73,
+  "title": "字符串处理概念题2",
+  "category": "字符串处理",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字符串处理的说法，哪个是正确的？",
+  "options": [
+   "A. 字符串处理是Python的基础特性",
+   "B. 字符串处理不支持嵌套操作",
+   "C. 字符串处理只能用于数值类型",
+   "D. 字符串处理不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字符串处理是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 74,
+  "title": "字符串处理概念题3",
+  "category": "字符串处理",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字符串处理的说法，哪个是正确的？",
+  "options": [
+   "A. 字符串处理是Python的基础特性",
+   "B. 字符串处理不支持嵌套操作",
+   "C. 字符串处理只能用于数值类型",
+   "D. 字符串处理不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字符串处理是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 75,
+  "title": "列表去重",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【列表操作】列表去重\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表去重的功能。",
+  "solution": "lst=list(map(int,input().split()))\nprint(list(dict.fromkeys(lst)))",
+  "test_cases": []
+ },
+ {
+  "id": 76,
+  "title": "找最大最小值",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【列表操作】找最大最小值\n\n请编写Python程序完成以下功能：\n根据题目要求实现找最大最小值的功能。",
+  "solution": "lst=list(map(int,input().split()))\nprint(max(lst),min(lst))",
+  "test_cases": []
+ },
+ {
+  "id": 77,
+  "title": "列表排序",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【列表操作】列表排序\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表排序的功能。",
+  "solution": "lst=list(map(int,input().split()))\nprint(sorted(lst))",
+  "test_cases": []
+ },
+ {
+  "id": 78,
+  "title": "列表合并",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【列表操作】列表合并\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表合并的功能。",
+  "solution": "a=list(map(int,input().split()))\nb=list(map(int,input().split()))\nprint(sorted(a+b))",
+  "test_cases": []
+ },
+ {
+  "id": 79,
+  "title": "二分查找",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【列表操作】二分查找\n\n请编写Python程序完成以下功能：\n根据题目要求实现二分查找的功能。",
+  "solution": "lst=sorted(map(int,input().split()))\nt=int(input())\nl,r=0,len(lst)-1\nwhile l<=r:\n    m=(l+r)//2\n    if lst[m]==t:print(m);break\n    elif lst[m]<t:l=m+1\n    else:r=m-1\nelse:print(-1)",
+  "test_cases": []
+ },
+ {
+  "id": 80,
+  "title": "矩阵转置",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【列表操作】矩阵转置\n\n请编写Python程序完成以下功能：\n根据题目要求实现矩阵转置的功能。",
+  "solution": "n=int(input())\nm=[list(map(int,input().split())) for _ in range(n)]\nfor row in zip(*m):print(*row)",
+  "test_cases": []
+ },
+ {
+  "id": 81,
+  "title": "列表推导式练习",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【列表操作】列表推导式练习\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表推导式练习的功能。",
+  "solution": "n=int(input())\nprint([x**2 for x in range(1,n+1) if x%2==0])",
+  "test_cases": []
+ },
+ {
+  "id": 82,
+  "title": "列表切片操作",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【列表操作】列表切片操作\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表切片操作的功能。",
+  "solution": "lst=list(range(1,21))\nprint(lst[::2])",
+  "test_cases": []
+ },
+ {
+  "id": 83,
+  "title": "找第二大元素",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【列表操作】找第二大元素\n\n请编写Python程序完成以下功能：\n根据题目要求实现找第二大元素的功能。",
+  "solution": "lst=list(map(int,input().split()))\ns=sorted(set(lst))\nprint(s[-2])",
+  "test_cases": []
+ },
+ {
+  "id": 84,
+  "title": "列表扁平化",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【列表操作】列表扁平化\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表扁平化的功能。",
+  "solution": "lst=eval(input())\ndef flat(l):\n    r=[]\n    for i in l:\n        if isinstance(i,list):r.extend(flat(i))\n        else:r.append(i)\n    return r\nprint(flat(lst))",
+  "test_cases": []
+ },
+ {
+  "id": 85,
+  "title": "移除列表元素",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【列表操作】移除列表元素\n\n请编写Python程序完成以下功能：\n根据题目要求实现移除列表元素的功能。",
+  "solution": "lst=list(map(int,input().split()))\nv=int(input())\nprint([x for x in lst if x!=v])",
+  "test_cases": []
+ },
+ {
+  "id": 86,
+  "title": "列表旋转",
+  "category": "列表操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【列表操作】列表旋转\n\n请编写Python程序完成以下功能：\n根据题目要求实现列表旋转的功能。",
+  "solution": "lst=list(map(int,input().split()))\nk=int(input())\nk%=len(lst)\nprint(lst[-k:]+lst[:-k])",
+  "test_cases": []
+ },
+ {
+  "id": 87,
+  "title": "列表操作概念题1",
+  "category": "列表操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 列表操作的说法，哪个是正确的？",
+  "options": [
+   "A. 列表操作是Python的基础特性",
+   "B. 列表操作不支持嵌套操作",
+   "C. 列表操作只能用于数值类型",
+   "D. 列表操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。列表操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 88,
+  "title": "列表操作概念题2",
+  "category": "列表操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 列表操作的说法，哪个是正确的？",
+  "options": [
+   "A. 列表操作是Python的基础特性",
+   "B. 列表操作不支持嵌套操作",
+   "C. 列表操作只能用于数值类型",
+   "D. 列表操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。列表操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 89,
+  "title": "列表操作概念题3",
+  "category": "列表操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 列表操作的说法，哪个是正确的？",
+  "options": [
+   "A. 列表操作是Python的基础特性",
+   "B. 列表操作不支持嵌套操作",
+   "C. 列表操作只能用于数值类型",
+   "D. 列表操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。列表操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 90,
+  "title": "元组解包",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【元组操作】元组解包\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组解包的功能。",
+  "solution": "t=eval(input())\na,b,c=t\nprint(a,b,c)",
+  "test_cases": []
+ },
+ {
+  "id": 91,
+  "title": "命名元组",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【元组操作】命名元组\n\n请编写Python程序完成以下功能：\n根据题目要求实现命名元组的功能。",
+  "solution": "from collections import namedtuple\nP=namedtuple('Point','x y')\np=P(3,4)\nprint(p.x,p.y)",
+  "test_cases": []
+ },
+ {
+  "id": 92,
+  "title": "元组排序",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【元组操作】元组排序\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组排序的功能。",
+  "solution": "lst=[eval(x) for x in input().split(';')]\nprint(sorted(lst,key=lambda x:x[1]))",
+  "test_cases": []
+ },
+ {
+  "id": 93,
+  "title": "元组计数",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【元组操作】元组计数\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组计数的功能。",
+  "solution": "t=eval(input())\nv=int(input())\nprint(t.count(v))",
+  "test_cases": []
+ },
+ {
+  "id": 94,
+  "title": "元组索引",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【元组操作】元组索引\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组索引的功能。",
+  "solution": "t=eval(input())\nv=int(input())\nprint(t.index(v))",
+  "test_cases": []
+ },
+ {
+  "id": 95,
+  "title": "元组转列表操作",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【元组操作】元组转列表操作\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组转列表操作的功能。",
+  "solution": "t=eval(input())\nl=list(t)\nl.append(int(input()))\nprint(tuple(l))",
+  "test_cases": []
+ },
+ {
+  "id": 96,
+  "title": "多返回值函数",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【元组操作】多返回值函数\n\n请编写Python程序完成以下功能：\n根据题目要求实现多返回值函数的功能。",
+  "solution": "def minmax(lst):\n    return min(lst),max(lst)\nlst=list(map(int,input().split()))\nprint(minmax(lst))",
+  "test_cases": []
+ },
+ {
+  "id": 97,
+  "title": "元组比较",
+  "category": "元组操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【元组操作】元组比较\n\n请编写Python程序完成以下功能：\n根据题目要求实现元组比较的功能。",
+  "solution": "t1=eval(input())\nt2=eval(input())\nprint(t1>t2)",
+  "test_cases": []
+ },
+ {
+  "id": 98,
+  "title": "元组操作概念题1",
+  "category": "元组操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 元组操作的说法，哪个是正确的？",
+  "options": [
+   "A. 元组操作是Python的基础特性",
+   "B. 元组操作不支持嵌套操作",
+   "C. 元组操作只能用于数值类型",
+   "D. 元组操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。元组操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 99,
+  "title": "元组操作概念题2",
+  "category": "元组操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 元组操作的说法，哪个是正确的？",
+  "options": [
+   "A. 元组操作是Python的基础特性",
+   "B. 元组操作不支持嵌套操作",
+   "C. 元组操作只能用于数值类型",
+   "D. 元组操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。元组操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 100,
+  "title": "词频统计",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字典操作】词频统计\n\n请编写Python程序完成以下功能：\n根据题目要求实现词频统计的功能。",
+  "solution": "s=input().split()\nd={}\nfor w in s:d[w]=d.get(w,0)+1\nfor k,v in sorted(d.items(),key=lambda x:-x[1]):print(f'{k}:{v}')",
+  "test_cases": []
+ },
+ {
+  "id": 101,
+  "title": "字典合并",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字典操作】字典合并\n\n请编写Python程序完成以下功能：\n根据题目要求实现字典合并的功能。",
+  "solution": "d1=eval(input())\nd2=eval(input())\nd1.update(d2)\nprint(d1)",
+  "test_cases": []
+ },
+ {
+  "id": 102,
+  "title": "字典排序",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字典操作】字典排序\n\n请编写Python程序完成以下功能：\n根据题目要求实现字典排序的功能。",
+  "solution": "d=eval(input())\nprint(dict(sorted(d.items(),key=lambda x:x[1])))",
+  "test_cases": []
+ },
+ {
+  "id": 103,
+  "title": "学生成绩管理",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字典操作】学生成绩管理\n\n请编写Python程序完成以下功能：\n根据题目要求实现学生成绩管理的功能。",
+  "solution": "n=int(input())\nstus={}\nfor _ in range(n):\n    name,score=input().split()\n    stus[name]=float(score)\nprint(f'最高分:{max(stus,key=stus.get)}')\nprint(f'平均分:{sum(stus.values())/len(stus):.1f}')",
+  "test_cases": []
+ },
+ {
+  "id": 104,
+  "title": "字典推导式",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字典操作】字典推导式\n\n请编写Python程序完成以下功能：\n根据题目要求实现字典推导式的功能。",
+  "solution": "n=int(input())\nprint({x:x**2 for x in range(1,n+1)})",
+  "test_cases": []
+ },
+ {
+  "id": 105,
+  "title": "嵌套字典操作",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字典操作】嵌套字典操作\n\n请编写Python程序完成以下功能：\n根据题目要求实现嵌套字典操作的功能。",
+  "solution": "data={'students':{'张三':{'math':90,'eng':85},'李四':{'math':78,'eng':92}}}\nfor name,scores in data['students'].items():\n    print(f'{name}:avg={sum(scores.values())/len(scores):.1f}')",
+  "test_cases": []
+ },
+ {
+  "id": 106,
+  "title": "字典键值互换",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字典操作】字典键值互换\n\n请编写Python程序完成以下功能：\n根据题目要求实现字典键值互换的功能。",
+  "solution": "d=eval(input())\nprint({v:k for k,v in d.items()})",
+  "test_cases": []
+ },
+ {
+  "id": 107,
+  "title": "统计字符类型",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字典操作】统计字符类型\n\n请编写Python程序完成以下功能：\n根据题目要求实现统计字符类型的功能。",
+  "solution": "s=input()\nd={'数字':0,'字母':0,'空格':0,'其他':0}\nfor c in s:\n    if c.isdigit():d['数字']+=1\n    elif c.isalpha():d['字母']+=1\n    elif c==' ':d['空格']+=1\n    else:d['其他']+=1\nprint(d)",
+  "test_cases": []
+ },
+ {
+  "id": 108,
+  "title": "默认字典",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字典操作】默认字典\n\n请编写Python程序完成以下功能：\n根据题目要求实现默认字典的功能。",
+  "solution": "from collections import defaultdict\nd=defaultdict(list)\nfor item in input().split():\n    k,v=item.split(':')\n    d[k].append(v)\nprint(dict(d))",
+  "test_cases": []
+ },
+ {
+  "id": 109,
+  "title": "JSON数据处理",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【字典操作】JSON数据处理\n\n请编写Python程序完成以下功能：\n根据题目要求实现JSON数据处理的功能。",
+  "solution": "import json\ndata=json.loads(input())\nfor k,v in data.items():print(f'{k}={v}')",
+  "test_cases": []
+ },
+ {
+  "id": 110,
+  "title": "电话簿程序",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【字典操作】电话簿程序\n\n请编写Python程序完成以下功能：\n根据题目要求实现电话簿程序的功能。",
+  "solution": "book={}\nn=int(input())\nfor _ in range(n):\n    parts=input().split()\n    if parts[0]=='add':book[parts[1]]=parts[2]\n    elif parts[0]=='find':print(book.get(parts[1],'未找到'))\n    elif parts[0]=='del':book.pop(parts[1],None)",
+  "test_cases": []
+ },
+ {
+  "id": 111,
+  "title": "计数器",
+  "category": "字典操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【字典操作】计数器\n\n请编写Python程序完成以下功能：\n根据题目要求实现计数器的功能。",
+  "solution": "from collections import Counter\ns=input()\nc=Counter(s)\nfor char,cnt in c.most_common(5):print(f'{char}:{cnt}')",
+  "test_cases": []
+ },
+ {
+  "id": 112,
+  "title": "字典操作概念题1",
+  "category": "字典操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字典操作的说法，哪个是正确的？",
+  "options": [
+   "A. 字典操作是Python的基础特性",
+   "B. 字典操作不支持嵌套操作",
+   "C. 字典操作只能用于数值类型",
+   "D. 字典操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字典操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 113,
+  "title": "字典操作概念题2",
+  "category": "字典操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字典操作的说法，哪个是正确的？",
+  "options": [
+   "A. 字典操作是Python的基础特性",
+   "B. 字典操作不支持嵌套操作",
+   "C. 字典操作只能用于数值类型",
+   "D. 字典操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字典操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 114,
+  "title": "字典操作概念题3",
+  "category": "字典操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 字典操作的说法，哪个是正确的？",
+  "options": [
+   "A. 字典操作是Python的基础特性",
+   "B. 字典操作不支持嵌套操作",
+   "C. 字典操作只能用于数值类型",
+   "D. 字典操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。字典操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 115,
+  "title": "集合运算",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【集合操作】集合运算\n\n请编写Python程序完成以下功能：\n根据题目要求实现集合运算的功能。",
+  "solution": "a=set(map(int,input().split()))\nb=set(map(int,input().split()))\nprint('交集:',a&b)\nprint('并集:',a|b)\nprint('差集:',a-b)",
+  "test_cases": []
+ },
+ {
+  "id": 116,
+  "title": "去重保序",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【集合操作】去重保序\n\n请编写Python程序完成以下功能：\n根据题目要求实现去重保序的功能。",
+  "solution": "lst=list(map(int,input().split()))\nseen=set()\nr=[x for x in lst if x not in seen and not seen.add(x)]\nprint(r)",
+  "test_cases": []
+ },
+ {
+  "id": 117,
+  "title": "对称差集",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【集合操作】对称差集\n\n请编写Python程序完成以下功能：\n根据题目要求实现对称差集的功能。",
+  "solution": "a=set(map(int,input().split()))\nb=set(map(int,input().split()))\nprint(a^b)",
+  "test_cases": []
+ },
+ {
+  "id": 118,
+  "title": "子集判断",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【集合操作】子集判断\n\n请编写Python程序完成以下功能：\n根据题目要求实现子集判断的功能。",
+  "solution": "a=set(map(int,input().split()))\nb=set(map(int,input().split()))\nprint(a.issubset(b))",
+  "test_cases": []
+ },
+ {
+  "id": 119,
+  "title": "集合推导式",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【集合操作】集合推导式\n\n请编写Python程序完成以下功能：\n根据题目要求实现集合推导式的功能。",
+  "solution": "n=int(input())\nprint({x%10 for x in range(n)})",
+  "test_cases": []
+ },
+ {
+  "id": 120,
+  "title": "找共同好友",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【集合操作】找共同好友\n\n请编写Python程序完成以下功能：\n根据题目要求实现找共同好友的功能。",
+  "solution": "f1=set(input().split())\nf2=set(input().split())\nprint(f1&f2)",
+  "test_cases": []
+ },
+ {
+  "id": 121,
+  "title": "集合过滤",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【集合操作】集合过滤\n\n请编写Python程序完成以下功能：\n根据题目要求实现集合过滤的功能。",
+  "solution": "nums=set(map(int,input().split()))\nprint({x for x in nums if x>0})",
+  "test_cases": []
+ },
+ {
+  "id": 122,
+  "title": "不可变集合",
+  "category": "集合操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【集合操作】不可变集合\n\n请编写Python程序完成以下功能：\n根据题目要求实现不可变集合的功能。",
+  "solution": "fs=frozenset([1,2,3])\nprint(fs,type(fs).__name__)",
+  "test_cases": []
+ },
+ {
+  "id": 123,
+  "title": "集合操作概念题1",
+  "category": "集合操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 集合操作的说法，哪个是正确的？",
+  "options": [
+   "A. 集合操作是Python的基础特性",
+   "B. 集合操作不支持嵌套操作",
+   "C. 集合操作只能用于数值类型",
+   "D. 集合操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。集合操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 124,
+  "title": "集合操作概念题2",
+  "category": "集合操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 集合操作的说法，哪个是正确的？",
+  "options": [
+   "A. 集合操作是Python的基础特性",
+   "B. 集合操作不支持嵌套操作",
+   "C. 集合操作只能用于数值类型",
+   "D. 集合操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。集合操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 125,
+  "title": "递归求阶乘",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数基础】递归求阶乘\n\n请编写Python程序完成以下功能：\n根据题目要求实现递归求阶乘的功能。",
+  "solution": "def factorial(n):\n    return 1 if n<=1 else n*factorial(n-1)\nprint(factorial(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 126,
+  "title": "lambda排序",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数基础】lambda排序\n\n请编写Python程序完成以下功能：\n根据题目要求实现lambda排序的功能。",
+  "solution": "lst=input().split()\nprint(sorted(lst,key=lambda x:len(x)))",
+  "test_cases": []
+ },
+ {
+  "id": 127,
+  "title": "map/filter应用",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数基础】map/filter应用\n\n请编写Python程序完成以下功能：\n根据题目要求实现map/filter应用的功能。",
+  "solution": "lst=list(map(int,input().split()))\nprint(list(filter(lambda x:x%2==0,map(lambda x:x**2,lst))))",
+  "test_cases": []
+ },
+ {
+  "id": 128,
+  "title": "默认参数",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数基础】默认参数\n\n请编写Python程序完成以下功能：\n根据题目要求实现默认参数的功能。",
+  "solution": "def greet(name,greeting='你好'):\n    return f'{greeting},{name}!'\nprint(greet(input()))",
+  "test_cases": []
+ },
+ {
+  "id": 129,
+  "title": "可变参数",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数基础】可变参数\n\n请编写Python程序完成以下功能：\n根据题目要求实现可变参数的功能。",
+  "solution": "def total(*args):\n    return sum(args)\nprint(total(*map(int,input().split())))",
+  "test_cases": []
+ },
+ {
+  "id": 130,
+  "title": "关键字参数",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数基础】关键字参数\n\n请编写Python程序完成以下功能：\n根据题目要求实现关键字参数的功能。",
+  "solution": "def info(**kwargs):\n    for k,v in kwargs.items():print(f'{k}:{v}')\ninfo(name='张三',age=20,city='北京')",
+  "test_cases": []
+ },
+ {
+  "id": 131,
+  "title": "函数嵌套",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数基础】函数嵌套\n\n请编写Python程序完成以下功能：\n根据题目要求实现函数嵌套的功能。",
+  "solution": "def outer():\n    x=10\n    def inner():\n        return x*2\n    return inner()\nprint(outer())",
+  "test_cases": []
+ },
+ {
+  "id": 132,
+  "title": "高阶函数",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数基础】高阶函数\n\n请编写Python程序完成以下功能：\n根据题目要求实现高阶函数的功能。",
+  "solution": "from functools import reduce\nlst=list(map(int,input().split()))\nprint(reduce(lambda a,b:a*b,lst))",
+  "test_cases": []
+ },
+ {
+  "id": 133,
+  "title": "闭包计数器",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数基础】闭包计数器\n\n请编写Python程序完成以下功能：\n根据题目要求实现闭包计数器的功能。",
+  "solution": "def counter():\n    c=[0]\n    def inc():\n        c[0]+=1\n        return c[0]\n    return inc\nfn=counter()\nfor _ in range(5):print(fn())",
+  "test_cases": []
+ },
+ {
+  "id": 134,
+  "title": "递归求和",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数基础】递归求和\n\n请编写Python程序完成以下功能：\n根据题目要求实现递归求和的功能。",
+  "solution": "def rsum(n):\n    return 0 if n==0 else n+rsum(n-1)\nprint(rsum(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 135,
+  "title": "二分法求方程根",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数基础】二分法求方程根\n\n请编写Python程序完成以下功能：\n根据题目要求实现二分法求方程根的功能。",
+  "solution": "def solve(f,a,b):\n    while b-a>1e-6:\n        m=(a+b)/2\n        if f(m)*f(a)<0:b=m\n        else:a=m\n    return round(m,4)\nprint(solve(lambda x:x**3-x-1,1,2))",
+  "test_cases": []
+ },
+ {
+  "id": 136,
+  "title": "函数缓存",
+  "category": "函数基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数基础】函数缓存\n\n请编写Python程序完成以下功能：\n根据题目要求实现函数缓存的功能。",
+  "solution": "cache={}\ndef fib(n):\n    if n in cache:return cache[n]\n    if n<2:return n\n    cache[n]=fib(n-1)+fib(n-2)\n    return cache[n]\nprint(fib(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 137,
+  "title": "函数基础概念题1",
+  "category": "函数基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数基础的说法，哪个是正确的？",
+  "options": [
+   "A. 函数基础是Python的基础特性",
+   "B. 函数基础不支持嵌套操作",
+   "C. 函数基础只能用于数值类型",
+   "D. 函数基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 138,
+  "title": "函数基础概念题2",
+  "category": "函数基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数基础的说法，哪个是正确的？",
+  "options": [
+   "A. 函数基础是Python的基础特性",
+   "B. 函数基础不支持嵌套操作",
+   "C. 函数基础只能用于数值类型",
+   "D. 函数基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 139,
+  "title": "函数基础概念题3",
+  "category": "函数基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数基础的说法，哪个是正确的？",
+  "options": [
+   "A. 函数基础是Python的基础特性",
+   "B. 函数基础不支持嵌套操作",
+   "C. 函数基础只能用于数值类型",
+   "D. 函数基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 140,
+  "title": "偏函数",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数进阶】偏函数\n\n请编写Python程序完成以下功能：\n根据题目要求实现偏函数的功能。",
+  "solution": "from functools import partial\ndef power(base,exp):\n    return base**exp\nsquare=partial(power,exp=2)\nprint(square(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 141,
+  "title": "函数工厂",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数进阶】函数工厂\n\n请编写Python程序完成以下功能：\n根据题目要求实现函数工厂的功能。",
+  "solution": "def make_adder(n):\n    return lambda x:x+n\nadd5=make_adder(5)\nprint(add5(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 142,
+  "title": "回调函数",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数进阶】回调函数\n\n请编写Python程序完成以下功能：\n根据题目要求实现回调函数的功能。",
+  "solution": "def apply(func,lst):\n    return [func(x) for x in lst]\nprint(apply(lambda x:x*2,[1,2,3,4,5]))",
+  "test_cases": []
+ },
+ {
+  "id": 143,
+  "title": "函数注解",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数进阶】函数注解\n\n请编写Python程序完成以下功能：\n根据题目要求实现函数注解的功能。",
+  "solution": "def add(a:int,b:int)->int:\n    return a+b\nprint(add.__annotations__)\nprint(add(3,5))",
+  "test_cases": []
+ },
+ {
+  "id": 144,
+  "title": "递归汉诺塔",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数进阶】递归汉诺塔\n\n请编写Python程序完成以下功能：\n根据题目要求实现递归汉诺塔的功能。",
+  "solution": "def hanoi(n,a,b,c):\n    if n==1:print(f'{a}->{c}')\n    else:hanoi(n-1,a,c,b);print(f'{a}->{c}');hanoi(n-1,b,a,c)\nhanoi(int(input()),'A','B','C')",
+  "test_cases": []
+ },
+ {
+  "id": 145,
+  "title": "尾递归优化",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数进阶】尾递归优化\n\n请编写Python程序完成以下功能：\n根据题目要求实现尾递归优化的功能。",
+  "solution": "def tail_sum(n,acc=0):\n    if n==0:return acc\n    return tail_sum(n-1,acc+n)\nprint(tail_sum(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 146,
+  "title": "函数组合",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【函数进阶】函数组合\n\n请编写Python程序完成以下功能：\n根据题目要求实现函数组合的功能。",
+  "solution": "def compose(f,g):\n    return lambda x:f(g(x))\ndouble=lambda x:x*2\nadd1=lambda x:x+1\nfn=compose(double,add1)\nprint(fn(int(input())))",
+  "test_cases": []
+ },
+ {
+  "id": 147,
+  "title": "链式调用",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【函数进阶】链式调用\n\n请编写Python程序完成以下功能：\n根据题目要求实现链式调用的功能。",
+  "solution": "class Calc:\n    def __init__(s,v=0):s.v=v\n    def add(s,n):s.v+=n;return s\n    def mul(s,n):s.v*=n;return s\n    def result(s):return s.v\nprint(Calc(0).add(5).mul(3).add(2).result())",
+  "test_cases": []
+ },
+ {
+  "id": 148,
+  "title": "协程基础",
+  "category": "函数进阶",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【函数进阶】协程基础\n\n请编写Python程序完成以下功能：\n根据题目要求实现协程基础的功能。",
+  "solution": "def gen():\n    total=0\n    while True:\n        x=yield total\n        if x is None:break\n        total+=x\ng=gen();next(g)\nfor i in range(1,6):print(g.send(i))",
+  "test_cases": []
+ },
+ {
+  "id": 149,
+  "title": "函数进阶概念题1",
+  "category": "函数进阶",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数进阶的说法，哪个是正确的？",
+  "options": [
+   "A. 函数进阶是Python的基础特性",
+   "B. 函数进阶不支持嵌套操作",
+   "C. 函数进阶只能用于数值类型",
+   "D. 函数进阶不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数进阶是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 150,
+  "title": "函数进阶概念题2",
+  "category": "函数进阶",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数进阶的说法，哪个是正确的？",
+  "options": [
+   "A. 函数进阶是Python的基础特性",
+   "B. 函数进阶不支持嵌套操作",
+   "C. 函数进阶只能用于数值类型",
+   "D. 函数进阶不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数进阶是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 151,
+  "title": "函数进阶概念题3",
+  "category": "函数进阶",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 函数进阶的说法，哪个是正确的？",
+  "options": [
+   "A. 函数进阶是Python的基础特性",
+   "B. 函数进阶不支持嵌套操作",
+   "C. 函数进阶只能用于数值类型",
+   "D. 函数进阶不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。函数进阶是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 152,
+  "title": "读取文件统计行数",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【文件操作】读取文件统计行数\n\n请编写Python程序完成以下功能：\n根据题目要求实现读取文件统计行数的功能。",
+  "solution": "content='''第一行\n第二行\n第三行'''\nlines=content.strip().split('\\n')\nprint(len(lines))",
+  "test_cases": []
+ },
+ {
+  "id": 153,
+  "title": "写入CSV数据",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【文件操作】写入CSV数据\n\n请编写Python程序完成以下功能：\n根据题目要求实现写入CSV数据的功能。",
+  "solution": "import csv,io\ndata=[['姓名','成绩'],['张三','90'],['李四','85']]\nout=io.StringIO()\nwriter=csv.writer(out)\nwriter.writerows(data)\nprint(out.getvalue())",
+  "test_cases": []
+ },
+ {
+  "id": 154,
+  "title": "JSON文件处理",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【文件操作】JSON文件处理\n\n请编写Python程序完成以下功能：\n根据题目要求实现JSON文件处理的功能。",
+  "solution": "import json\ndata={'students':[{'name':'张三','score':90},{'name':'李四','score':85}]}\nprint(json.dumps(data,ensure_ascii=False,indent=2))",
+  "test_cases": []
+ },
+ {
+  "id": 155,
+  "title": "统计文件中的单词",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【文件操作】统计文件中的单词\n\n请编写Python程序完成以下功能：\n根据题目要求实现统计文件中的单词的功能。",
+  "solution": "text='hello world hello python world hello'\nwords=text.split()\nfreq={}\nfor w in words:freq[w]=freq.get(w,0)+1\nfor k,v in sorted(freq.items(),key=lambda x:-x[1]):print(f'{k}:{v}')",
+  "test_cases": []
+ },
+ {
+  "id": 156,
+  "title": "文件内容替换",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【文件操作】文件内容替换\n\n请编写Python程序完成以下功能：\n根据题目要求实现文件内容替换的功能。",
+  "solution": "content='Hello World\\nPython Programming\\nHello Python'\nresult=content.replace('Hello','Hi')\nprint(result)",
+  "test_cases": []
+ },
+ {
+  "id": 157,
+  "title": "读取配置文件",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【文件操作】读取配置文件\n\n请编写Python程序完成以下功能：\n根据题目要求实现读取配置文件的功能。",
+  "solution": "config='host=localhost\\nport=3128\\ndb=test'\nd={}\nfor line in config.split('\\n'):\n    k,v=line.split('=')\n    d[k]=v\nprint(d)",
+  "test_cases": []
+ },
+ {
+  "id": 158,
+  "title": "模拟日志分析",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【文件操作】模拟日志分析\n\n请编写Python程序完成以下功能：\n根据题目要求实现模拟日志分析的功能。",
+  "solution": "logs='INFO: start\\nERROR: fail\\nINFO: ok\\nWARN: slow\\nERROR: crash'\nerrors=[l for l in logs.split('\\n') if 'ERROR' in l]\nprint(f'错误数:{len(errors)}')\nfor e in errors:print(e)",
+  "test_cases": []
+ },
+ {
+  "id": 159,
+  "title": "数据序列化",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【文件操作】数据序列化\n\n请编写Python程序完成以下功能：\n根据题目要求实现数据序列化的功能。",
+  "solution": "import pickle,io\ndata={'name':'测试','values':[1,2,3]}\nbuf=io.BytesIO()\npickle.dump(data,buf)\nbuf.seek(0)\nloaded=pickle.load(buf)\nprint(loaded)",
+  "test_cases": []
+ },
+ {
+  "id": 160,
+  "title": "路径操作",
+  "category": "文件操作",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【文件操作】路径操作\n\n请编写Python程序完成以下功能：\n根据题目要求实现路径操作的功能。",
+  "solution": "import os.path\np='/home/user/documents/test.py'\nprint(f'目录:{os.path.dirname(p)}')\nprint(f'文件名:{os.path.basename(p)}')\nprint(f'扩展名:{os.path.splitext(p)[1]}')",
+  "test_cases": []
+ },
+ {
+  "id": 161,
+  "title": "文件操作概念题1",
+  "category": "文件操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 文件操作的说法，哪个是正确的？",
+  "options": [
+   "A. 文件操作是Python的基础特性",
+   "B. 文件操作不支持嵌套操作",
+   "C. 文件操作只能用于数值类型",
+   "D. 文件操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。文件操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 162,
+  "title": "文件操作概念题2",
+  "category": "文件操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 文件操作的说法，哪个是正确的？",
+  "options": [
+   "A. 文件操作是Python的基础特性",
+   "B. 文件操作不支持嵌套操作",
+   "C. 文件操作只能用于数值类型",
+   "D. 文件操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。文件操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 163,
+  "title": "文件操作概念题3",
+  "category": "文件操作",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 文件操作的说法，哪个是正确的？",
+  "options": [
+   "A. 文件操作是Python的基础特性",
+   "B. 文件操作不支持嵌套操作",
+   "C. 文件操作只能用于数值类型",
+   "D. 文件操作不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。文件操作是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 164,
+  "title": "定义学生类",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象基础】定义学生类\n\n请编写Python程序完成以下功能：\n根据题目要求实现定义学生类的功能。",
+  "solution": "class Student:\n    def __init__(s,name,age):s.name=name;s.age=age\n    def info(s):return f'{s.name},{s.age}岁'\ns=Student('张三',20)\nprint(s.info())",
+  "test_cases": []
+ },
+ {
+  "id": 165,
+  "title": "继承与多态",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象基础】继承与多态\n\n请编写Python程序完成以下功能：\n根据题目要求实现继承与多态的功能。",
+  "solution": "class Shape:\n    def area(s):return 0\nclass Circle(Shape):\n    def __init__(s,r):s.r=r\n    def area(s):import math;return round(math.pi*s.r**2,2)\nclass Rect(Shape):\n    def __init__(s,w,h):s.w=w;s.h=h\n    def area(s):return s.w*s.h\nfor sh in [Circle(5),Rect(3,4)]:print(sh.area())",
+  "test_cases": []
+ },
+ {
+  "id": 166,
+  "title": "封装与属性",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【面向对象基础】封装与属性\n\n请编写Python程序完成以下功能：\n根据题目要求实现封装与属性的功能。",
+  "solution": "class Account:\n    def __init__(s,balance=0):s.__balance=balance\n    @property\n    def balance(s):return s.__balance\n    def deposit(s,n):s.__balance+=n\n    def withdraw(s,n):\n        if n<=s.__balance:s.__balance-=n\n        else:print('余额不足')\na=Account(100)\na.deposit(50)\na.withdraw(30)\nprint(a.balance)",
+  "test_cases": []
+ },
+ {
+  "id": 167,
+  "title": "运算符重载",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象基础】运算符重载\n\n请编写Python程序完成以下功能：\n根据题目要求实现运算符重载的功能。",
+  "solution": "class Vector:\n    def __init__(s,x,y):s.x=x;s.y=y\n    def __add__(s,o):return Vector(s.x+o.x,s.y+o.y)\n    def __str__(s):return f'({s.x},{s.y})'\nv=Vector(1,2)+Vector(3,4)\nprint(v)",
+  "test_cases": []
+ },
+ {
+  "id": 168,
+  "title": "抽象类",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象基础】抽象类\n\n请编写Python程序完成以下功能：\n根据题目要求实现抽象类的功能。",
+  "solution": "from abc import ABC,abstractmethod\nclass Animal(ABC):\n    @abstractmethod\n    def speak(s):pass\nclass Dog(Animal):\n    def speak(s):return '汪汪'\nclass Cat(Animal):\n    def speak(s):return '喵喵'\nfor a in [Dog(),Cat()]:print(a.speak())",
+  "test_cases": []
+ },
+ {
+  "id": 169,
+  "title": "类方法与静态方法",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【面向对象基础】类方法与静态方法\n\n请编写Python程序完成以下功能：\n根据题目要求实现类方法与静态方法的功能。",
+  "solution": "class MathHelper:\n    PI=3.14159\n    @classmethod\n    def circle_area(cls,r):return cls.PI*r**2\n    @staticmethod\n    def add(a,b):return a+b\nprint(MathHelper.circle_area(5))\nprint(MathHelper.add(3,4))",
+  "test_cases": []
+ },
+ {
+  "id": 170,
+  "title": "迭代器类",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象基础】迭代器类\n\n请编写Python程序完成以下功能：\n根据题目要求实现迭代器类的功能。",
+  "solution": "class Range:\n    def __init__(s,start,end):s.cur=start;s.end=end\n    def __iter__(s):return s\n    def __next__(s):\n        if s.cur>=s.end:raise StopIteration\n        v=s.cur;s.cur+=1;return v\nprint(list(Range(1,6)))",
+  "test_cases": []
+ },
+ {
+  "id": 171,
+  "title": "上下文管理器",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象基础】上下文管理器\n\n请编写Python程序完成以下功能：\n根据题目要求实现上下文管理器的功能。",
+  "solution": "class Timer:\n    def __enter__(s):\n        import time;s.start=time.time();return s\n    def __exit__(s,*a):print(f'耗时:{time.time()-s.start:.4f}秒')\nwith Timer():\n    sum(range(1000000))",
+  "test_cases": []
+ },
+ {
+  "id": 172,
+  "title": "单例模式",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【面向对象基础】单例模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现单例模式的功能。",
+  "solution": "class Singleton:\n    _inst=None\n    def __new__(cls):\n        if cls._inst is None:cls._inst=super().__new__(cls)\n        return cls._inst\na=Singleton();b=Singleton()\nprint(a is b)",
+  "test_cases": []
+ },
+ {
+  "id": 173,
+  "title": "观察者模式",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象基础】观察者模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现观察者模式的功能。",
+  "solution": "class Event:\n    def __init__(s):s.handlers=[]\n    def subscribe(s,fn):s.handlers.append(fn)\n    def fire(s,data):\n        for fn in s.handlers:fn(data)\ne=Event()\ne.subscribe(lambda d:print(f'收到:{d}'))\ne.fire('测试消息')",
+  "test_cases": []
+ },
+ {
+  "id": 174,
+  "title": "数据类",
+  "category": "面向对象基础",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象基础】数据类\n\n请编写Python程序完成以下功能：\n根据题目要求实现数据类的功能。",
+  "solution": "from dataclasses import dataclass\n@dataclass\nclass Point:\n    x:float\n    y:float\n    def distance(s):return (s.x**2+s.y**2)**0.5\np=Point(3,4)\nprint(p,p.distance())",
+  "test_cases": []
+ },
+ {
+  "id": 175,
+  "title": "面向对象基础概念题1",
+  "category": "面向对象基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象基础的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象基础是Python的基础特性",
+   "B. 面向对象基础不支持嵌套操作",
+   "C. 面向对象基础只能用于数值类型",
+   "D. 面向对象基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 176,
+  "title": "面向对象基础概念题2",
+  "category": "面向对象基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象基础的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象基础是Python的基础特性",
+   "B. 面向对象基础不支持嵌套操作",
+   "C. 面向对象基础只能用于数值类型",
+   "D. 面向对象基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 177,
+  "title": "面向对象基础概念题3",
+  "category": "面向对象基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象基础的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象基础是Python的基础特性",
+   "B. 面向对象基础不支持嵌套操作",
+   "C. 面向对象基础只能用于数值类型",
+   "D. 面向对象基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 178,
+  "title": "面向对象基础概念题4",
+  "category": "面向对象基础",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象基础的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象基础是Python的基础特性",
+   "B. 面向对象基础不支持嵌套操作",
+   "C. 面向对象基础只能用于数值类型",
+   "D. 面向对象基础不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象基础是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 179,
+  "title": "Mixin模式",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象进阶】Mixin模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现Mixin模式的功能。",
+  "solution": "class JsonMixin:\n    def to_json(s):\n        import json\n        return json.dumps(s.__dict__,ensure_ascii=False)\nclass User(JsonMixin):\n    def __init__(s,name,age):s.name=name;s.age=age\nprint(User('张三',20).to_json())",
+  "test_cases": []
+ },
+ {
+  "id": 180,
+  "title": "描述符",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象进阶】描述符\n\n请编写Python程序完成以下功能：\n根据题目要求实现描述符的功能。",
+  "solution": "class Positive:\n    def __set_name__(s,o,n):s.name='_'+n\n    def __get__(s,o,t):return getattr(o,s.name,0)\n    def __set__(s,o,v):\n        if v<0:raise ValueError('必须为正数')\n        setattr(o,s.name,v)\nclass Product:\n    price=Positive()\np=Product();p.price=100\nprint(p.price)",
+  "test_cases": []
+ },
+ {
+  "id": 181,
+  "title": "元类基础",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【面向对象进阶】元类基础\n\n请编写Python程序完成以下功能：\n根据题目要求实现元类基础的功能。",
+  "solution": "class Meta(type):\n    def __new__(mcs,name,bases,ns):\n        ns['created']=True\n        return super().__new__(mcs,name,bases,ns)\nclass MyClass(metaclass=Meta):pass\nprint(MyClass.created)",
+  "test_cases": []
+ },
+ {
+  "id": 182,
+  "title": "多重继承MRO",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象进阶】多重继承MRO\n\n请编写Python程序完成以下功能：\n根据题目要求实现多重继承MRO的功能。",
+  "solution": "class A:\n    def who(s):return 'A'\nclass B(A):\n    def who(s):return 'B'\nclass C(A):\n    def who(s):return 'C'\nclass D(B,C):pass\nprint(D().who())\nprint([c.__name__ for c in D.__mro__])",
+  "test_cases": []
+ },
+ {
+  "id": 183,
+  "title": "代理模式",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象进阶】代理模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现代理模式的功能。",
+  "solution": "class Proxy:\n    def __init__(s,obj):s._obj=obj\n    def __getattr__(s,name):return getattr(s._obj,name)\np=Proxy([1,2,3])\np.append(4)\nprint(p._obj)",
+  "test_cases": []
+ },
+ {
+  "id": 184,
+  "title": "工厂模式",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【面向对象进阶】工厂模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现工厂模式的功能。",
+  "solution": "class ShapeFactory:\n    @staticmethod\n    def create(t,**kw):\n        if t=='circle':return f\"圆(r={kw['r']})\"\n        elif t=='rect':return f\"矩形(w={kw['w']},h={kw['h']})\"\nprint(ShapeFactory.create('circle',r=5))\nprint(ShapeFactory.create('rect',w=3,h=4))",
+  "test_cases": []
+ },
+ {
+  "id": 185,
+  "title": "装饰器模式",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【面向对象进阶】装饰器模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现装饰器模式的功能。",
+  "solution": "class Bold:\n    def __init__(s,fn):s.fn=fn\n    def __call__(s,*a):return f'<b>{s.fn(*a)}</b>'\n@Bold\ndef hello(name):return f'你好,{name}'\nprint(hello('世界'))",
+  "test_cases": []
+ },
+ {
+  "id": 186,
+  "title": "策略模式",
+  "category": "面向对象进阶",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【面向对象进阶】策略模式\n\n请编写Python程序完成以下功能：\n根据题目要求实现策略模式的功能。",
+  "solution": "class Sorter:\n    def __init__(s,strategy):s.strategy=strategy\n    def sort(s,data):return s.strategy(data)\nprint(Sorter(sorted).sort([3,1,4,1,5]))\nprint(Sorter(lambda x:sorted(x,reverse=True)).sort([3,1,4,1,5]))",
+  "test_cases": []
+ },
+ {
+  "id": 187,
+  "title": "面向对象进阶概念题1",
+  "category": "面向对象进阶",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象进阶的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象进阶是Python的基础特性",
+   "B. 面向对象进阶不支持嵌套操作",
+   "C. 面向对象进阶只能用于数值类型",
+   "D. 面向对象进阶不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象进阶是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 188,
+  "title": "面向对象进阶概念题2",
+  "category": "面向对象进阶",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 面向对象进阶的说法，哪个是正确的？",
+  "options": [
+   "A. 面向对象进阶是Python的基础特性",
+   "B. 面向对象进阶不支持嵌套操作",
+   "C. 面向对象进阶只能用于数值类型",
+   "D. 面向对象进阶不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。面向对象进阶是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 189,
+  "title": "基本异常捕获",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【异常处理】基本异常捕获\n\n请编写Python程序完成以下功能：\n根据题目要求实现基本异常捕获的功能。",
+  "solution": "try:\n    n=int(input())\n    print(10/n)\nexcept ValueError:print('请输入数字')\nexcept ZeroDivisionError:print('除数不能为0')",
+  "test_cases": []
+ },
+ {
+  "id": 190,
+  "title": "自定义异常",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【异常处理】自定义异常\n\n请编写Python程序完成以下功能：\n根据题目要求实现自定义异常的功能。",
+  "solution": "class AgeError(Exception):\n    def __init__(s,age):s.age=age\n    def __str__(s):return f'无效年龄:{s.age}'\ntry:\n    age=int(input())\n    if age<0 or age>150:raise AgeError(age)\n    print(f'年龄:{age}')\nexcept AgeError as e:print(e)",
+  "test_cases": []
+ },
+ {
+  "id": 191,
+  "title": "finally用法",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【异常处理】finally用法\n\n请编写Python程序完成以下功能：\n根据题目要求实现finally用法的功能。",
+  "solution": "def divide(a,b):\n    try:return a/b\n    except ZeroDivisionError:return '错误'\n    finally:print('计算完成')\nprint(divide(10,3))",
+  "test_cases": []
+ },
+ {
+  "id": 192,
+  "title": "异常链",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【异常处理】异常链\n\n请编写Python程序完成以下功能：\n根据题目要求实现异常链的功能。",
+  "solution": "try:\n    try:\n        1/0\n    except ZeroDivisionError as e:\n        raise ValueError('计算错误') from e\nexcept ValueError as e:\n    print(f'{e},原因:{e.__cause__}')",
+  "test_cases": []
+ },
+ {
+  "id": 193,
+  "title": "上下文中的异常",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【异常处理】上下文中的异常\n\n请编写Python程序完成以下功能：\n根据题目要求实现上下文中的异常的功能。",
+  "solution": "class SafeOpen:\n    def __init__(s,fn):s.fn=fn\n    def __enter__(s):print(f'打开{s.fn}');return s\n    def __exit__(s,t,v,tb):\n        if t:print(f'发生异常:{v}');return True\n        print('正常关闭')\nwith SafeOpen('test.txt') as f:\n    raise ValueError('测试异常')",
+  "test_cases": []
+ },
+ {
+  "id": 194,
+  "title": "断言",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【异常处理】断言\n\n请编写Python程序完成以下功能：\n根据题目要求实现断言的功能。",
+  "solution": "def avg(lst):\n    assert len(lst)>0,'列表不能为空'\n    return sum(lst)/len(lst)\ntry:print(avg([]))\nexcept AssertionError as e:print(e)",
+  "test_cases": []
+ },
+ {
+  "id": 195,
+  "title": "异常日志记录",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【异常处理】异常日志记录\n\n请编写Python程序完成以下功能：\n根据题目要求实现异常日志记录的功能。",
+  "solution": "import logging\nlogging.basicConfig(level=logging.ERROR)\ntry:\n    result=1/0\nexcept Exception as e:\n    logging.error(f'发生错误:{e}')\n    print('已记录错误')",
+  "test_cases": []
+ },
+ {
+  "id": 196,
+  "title": "重试机制",
+  "category": "异常处理",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【异常处理】重试机制\n\n请编写Python程序完成以下功能：\n根据题目要求实现重试机制的功能。",
+  "solution": "import random\ndef retry(fn,times=3):\n    for i in range(times):\n        try:return fn()\n        except:print(f'第{i+1}次重试')\n    return '失败'\nprint(retry(lambda:1/random.choice([0,1,2])))",
+  "test_cases": []
+ },
+ {
+  "id": 197,
+  "title": "异常处理概念题1",
+  "category": "异常处理",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 异常处理的说法，哪个是正确的？",
+  "options": [
+   "A. 异常处理是Python的基础特性",
+   "B. 异常处理不支持嵌套操作",
+   "C. 异常处理只能用于数值类型",
+   "D. 异常处理不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。异常处理是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 198,
+  "title": "异常处理概念题2",
+  "category": "异常处理",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 异常处理的说法，哪个是正确的？",
+  "options": [
+   "A. 异常处理是Python的基础特性",
+   "B. 异常处理不支持嵌套操作",
+   "C. 异常处理只能用于数值类型",
+   "D. 异常处理不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。异常处理是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 199,
+  "title": "自定义模块",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【模块与包】自定义模块\n\n请编写Python程序完成以下功能：\n根据题目要求实现自定义模块的功能。",
+  "solution": "# 模拟模块功能\ndef add(a,b):return a+b\ndef sub(a,b):return a-b\nprint(add(3,5))\nprint(sub(10,4))",
+  "test_cases": []
+ },
+ {
+  "id": 200,
+  "title": "日期时间处理",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【模块与包】日期时间处理\n\n请编写Python程序完成以下功能：\n根据题目要求实现日期时间处理的功能。",
+  "solution": "from datetime import datetime,timedelta\nnow=datetime.now()\nprint(f'当前:{now.strftime(\"%Y-%m-%d %H:%M:%S\")}')\nprint(f'7天后:{(now+timedelta(days=7)).strftime(\"%Y-%m-%d\")}')",
+  "test_cases": []
+ },
+ {
+  "id": 201,
+  "title": "random模块",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【模块与包】random模块\n\n请编写Python程序完成以下功能：\n根据题目要求实现random模块的功能。",
+  "solution": "import random\nprint(random.randint(1,100))\nprint(random.choice(['苹果','香蕉','橙子']))\nlst=list(range(10))\nrandom.shuffle(lst)\nprint(lst[:5])",
+  "test_cases": []
+ },
+ {
+  "id": 202,
+  "title": "sys模块",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【模块与包】sys模块\n\n请编写Python程序完成以下功能：\n根据题目要求实现sys模块的功能。",
+  "solution": "import sys\nprint(f'Python版本:{sys.version}')\nprint(f'平台:{sys.platform}')",
+  "test_cases": []
+ },
+ {
+  "id": 203,
+  "title": "itertools模块",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【模块与包】itertools模块\n\n请编写Python程序完成以下功能：\n根据题目要求实现itertools模块的功能。",
+  "solution": "import itertools\nprint(list(itertools.combinations('ABCD',2)))\nprint(list(itertools.permutations('ABC',2)))\nprint(list(itertools.chain([1,2],[3,4])))",
+  "test_cases": []
+ },
+ {
+  "id": 204,
+  "title": "collections模块",
+  "category": "模块与包",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【模块与包】collections模块\n\n请编写Python程序完成以下功能：\n根据题目要求实现collections模块的功能。",
+  "solution": "from collections import Counter,OrderedDict,deque\nc=Counter('abracadabra')\nprint(c.most_common(3))\ndq=deque([1,2,3])\ndq.appendleft(0)\nprint(list(dq))",
+  "test_cases": []
+ },
+ {
+  "id": 205,
+  "title": "模块与包概念题1",
+  "category": "模块与包",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 模块与包的说法，哪个是正确的？",
+  "options": [
+   "A. 模块与包是Python的基础特性",
+   "B. 模块与包不支持嵌套操作",
+   "C. 模块与包只能用于数值类型",
+   "D. 模块与包不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。模块与包是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 206,
+  "title": "模块与包概念题2",
+  "category": "模块与包",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 模块与包的说法，哪个是正确的？",
+  "options": [
+   "A. 模块与包是Python的基础特性",
+   "B. 模块与包不支持嵌套操作",
+   "C. 模块与包只能用于数值类型",
+   "D. 模块与包不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。模块与包是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 207,
+  "title": "邮箱验证",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【正则表达式】邮箱验证\n\n请编写Python程序完成以下功能：\n根据题目要求实现邮箱验证的功能。",
+  "solution": "import re\nemail=input()\nprint('有效' if re.match(r'^[\\w.]+@[\\w]+\\.[a-z]{2,}$',email) else '无效')",
+  "test_cases": []
+ },
+ {
+  "id": 208,
+  "title": "手机号验证",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【正则表达式】手机号验证\n\n请编写Python程序完成以下功能：\n根据题目要求实现手机号验证的功能。",
+  "solution": "import re\nphone=input()\nprint('有效' if re.match(r'^1[3-9]\\d{9}$',phone) else '无效')",
+  "test_cases": []
+ },
+ {
+  "id": 209,
+  "title": "HTML标签提取",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【正则表达式】HTML标签提取\n\n请编写Python程序完成以下功能：\n根据题目要求实现HTML标签提取的功能。",
+  "solution": "import re\nhtml='<div><p>Hello</p><a href=\"#\">Link</a></div>'\ntags=re.findall(r'<(\\w+)',html)\nprint(tags)",
+  "test_cases": []
+ },
+ {
+  "id": 210,
+  "title": "IP地址验证",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【正则表达式】IP地址验证\n\n请编写Python程序完成以下功能：\n根据题目要求实现IP地址验证的功能。",
+  "solution": "import re\nip=input()\nprint('有效' if re.match(r'^((25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(25[0-5]|2[0-4]\\d|[01]?\\d\\d?)$',ip) else '无效')",
+  "test_cases": []
+ },
+ {
+  "id": 211,
+  "title": "文本替换",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【正则表达式】文本替换\n\n请编写Python程序完成以下功能：\n根据题目要求实现文本替换的功能。",
+  "solution": "import re\ntext='价格:100元,折扣:50元,总计:150元'\nresult=re.sub(r'(\\d+)元',lambda m:f'¥{m.group(1)}',text)\nprint(result)",
+  "test_cases": []
+ },
+ {
+  "id": 212,
+  "title": "分组提取",
+  "category": "正则表达式",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【正则表达式】分组提取\n\n请编写Python程序完成以下功能：\n根据题目要求实现分组提取的功能。",
+  "solution": "import re\ndate='2024-01-15'\nm=re.match(r'(\\d{4})-(\\d{2})-(\\d{2})',date)\nif m:print(f'年:{m.group(1)} 月:{m.group(2)} 日:{m.group(3)}')",
+  "test_cases": []
+ },
+ {
+  "id": 213,
+  "title": "正则表达式概念题1",
+  "category": "正则表达式",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 正则表达式的说法，哪个是正确的？",
+  "options": [
+   "A. 正则表达式是Python的基础特性",
+   "B. 正则表达式不支持嵌套操作",
+   "C. 正则表达式只能用于数值类型",
+   "D. 正则表达式不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。正则表达式是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 214,
+  "title": "正则表达式概念题2",
+  "category": "正则表达式",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 正则表达式的说法，哪个是正确的？",
+  "options": [
+   "A. 正则表达式是Python的基础特性",
+   "B. 正则表达式不支持嵌套操作",
+   "C. 正则表达式只能用于数值类型",
+   "D. 正则表达式不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。正则表达式是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 215,
+  "title": "计时装饰器",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【装饰器与生成器】计时装饰器\n\n请编写Python程序完成以下功能：\n根据题目要求实现计时装饰器的功能。",
+  "solution": "import time\ndef timer(fn):\n    def wrapper(*a,**kw):\n        t=time.time()\n        r=fn(*a,**kw)\n        print(f'{fn.__name__}耗时:{time.time()-t:.4f}s')\n        return r\n    return wrapper\n@timer\ndef slow():time.sleep(0.1);return 'done'\nprint(slow())",
+  "test_cases": []
+ },
+ {
+  "id": 216,
+  "title": "缓存装饰器",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【装饰器与生成器】缓存装饰器\n\n请编写Python程序完成以下功能：\n根据题目要求实现缓存装饰器的功能。",
+  "solution": "def cache(fn):\n    memo={}\n    def wrapper(*a):\n        if a not in memo:memo[a]=fn(*a)\n        return memo[a]\n    return wrapper\n@cache\ndef fib(n):return n if n<2 else fib(n-1)+fib(n-2)\nprint(fib(30))",
+  "test_cases": []
+ },
+ {
+  "id": 217,
+  "title": "生成器表达式",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【装饰器与生成器】生成器表达式\n\n请编写Python程序完成以下功能：\n根据题目要求实现生成器表达式的功能。",
+  "solution": "gen=(x**2 for x in range(10))\nprint(sum(gen))",
+  "test_cases": []
+ },
+ {
+  "id": 218,
+  "title": "yield生成器",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "困难",
+  "description": "【装饰器与生成器】yield生成器\n\n请编写Python程序完成以下功能：\n根据题目要求实现yield生成器的功能。",
+  "solution": "def fibonacci(n):\n    a,b=0,1\n    for _ in range(n):\n        yield a\n        a,b=b,a+b\nprint(list(fibonacci(10)))",
+  "test_cases": []
+ },
+ {
+  "id": 219,
+  "title": "装饰器带参数",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "简单",
+  "description": "【装饰器与生成器】装饰器带参数\n\n请编写Python程序完成以下功能：\n根据题目要求实现装饰器带参数的功能。",
+  "solution": "def repeat(n):\n    def decorator(fn):\n        def wrapper(*a):\n            for _ in range(n):fn(*a)\n        return wrapper\n    return decorator\n@repeat(3)\ndef say(msg):print(msg)\nsay('你好')",
+  "test_cases": []
+ },
+ {
+  "id": 220,
+  "title": "类装饰器",
+  "category": "装饰器与生成器",
+  "type": "programming",
+  "difficulty": "中等",
+  "description": "【装饰器与生成器】类装饰器\n\n请编写Python程序完成以下功能：\n根据题目要求实现类装饰器的功能。",
+  "solution": "class CountCalls:\n    def __init__(s,fn):s.fn=fn;s.count=0\n    def __call__(s,*a):\n        s.count+=1\n        print(f'第{s.count}次调用')\n        return s.fn(*a)\n@CountCalls\ndef hello():print('hello')\nhello();hello();hello()",
+  "test_cases": []
+ },
+ {
+  "id": 221,
+  "title": "装饰器与生成器概念题1",
+  "category": "装饰器与生成器",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 装饰器与生成器的说法，哪个是正确的？",
+  "options": [
+   "A. 装饰器与生成器是Python的基础特性",
+   "B. 装饰器与生成器不支持嵌套操作",
+   "C. 装饰器与生成器只能用于数值类型",
+   "D. 装饰器与生成器不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。装饰器与生成器是Python编程中的基础概念和重要特性。"
+ },
+ {
+  "id": 222,
+  "title": "装饰器与生成器概念题2",
+  "category": "装饰器与生成器",
+  "type": "choice",
+  "difficulty": "简单",
+  "description": "以下关于Python 装饰器与生成器的说法，哪个是正确的？",
+  "options": [
+   "A. 装饰器与生成器是Python的基础特性",
+   "B. 装饰器与生成器不支持嵌套操作",
+   "C. 装饰器与生成器只能用于数值类型",
+   "D. 装饰器与生成器不是Python标准库的一部分"
+  ],
+  "answer": "A",
+  "solution": "A是正确的。装饰器与生成器是Python编程中的基础概念和重要特性。"
+ }
+]

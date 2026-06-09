@@ -1,0 +1,298 @@
+{
+  "practice": [
+    {
+      "id": 1,
+      "title": "学生成绩管理系统",
+      "domain": "教育",
+      "description": "开发一个完整的学生成绩管理系统，支持学生信息录入、成绩查询、统计分析、成绩排名等功能。",
+      "tech": [
+        "Python",
+        "SQLite",
+        "Tkinter"
+      ],
+      "requirements": [
+        "学生信息增删改查",
+        "成绩录入与修改",
+        "成绩统计与可视化",
+        "数据导出为Excel",
+        "多条件查询"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "网络爬虫与数据分析",
+      "domain": "数据",
+      "description": "开发网络爬虫程序，抓取指定网站数据，并进行数据清洗、分析和可视化展示。",
+      "tech": [
+        "Python",
+        "requests",
+        "BeautifulSoup",
+        "pandas",
+        "matplotlib"
+      ],
+      "requirements": [
+        "网页数据抓取",
+        "数据清洗与预处理",
+        "数据统计分析",
+        "图表可视化",
+        "数据导出"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "文件批量处理工具",
+      "domain": "工具",
+      "description": "开发文件批量处理工具，支持文件重命名、格式转换、内容搜索替换等功能。",
+      "tech": [
+        "Python",
+        "os",
+        "shutil",
+        "tkinter"
+      ],
+      "requirements": [
+        "批量重命名",
+        "文件格式转换",
+        "内容搜索替换",
+        "文件分类整理",
+        "操作日志记录"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "天气查询应用",
+      "domain": "生活",
+      "description": "开发天气查询应用，支持城市搜索、天气预报显示、历史天气数据分析。",
+      "tech": [
+        "Python",
+        "Flask",
+        "API接口",
+        "HTML/CSS"
+      ],
+      "requirements": [
+        "城市搜索",
+        "实时天气显示",
+        "7日天气预报",
+        "天气趋势图表",
+        "收藏城市管理"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "个人记账本",
+      "domain": "金融",
+      "description": "开发个人记账管理系统，支持收支记录、分类统计、预算管理、报表生成。",
+      "tech": [
+        "Python",
+        "SQLite",
+        "matplotlib"
+      ],
+      "requirements": [
+        "收支记录管理",
+        "分类统计",
+        "月度/年度报表",
+        "预算设置与提醒",
+        "数据可视化"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "密码管理器",
+      "domain": "安全",
+      "description": "开发一个安全的密码管理工具，支持密码生成、加密存储、快速检索。",
+      "tech": [
+        "Python",
+        "cryptography",
+        "SQLite",
+        "tkinter"
+      ],
+      "requirements": [
+        "密码生成",
+        "AES加密存储",
+        "主密码验证",
+        "分类管理",
+        "密码强度检测"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "图片处理工具箱",
+      "domain": "多媒体",
+      "description": "开发图片批量处理工具，支持裁剪、缩放、滤镜、水印等功能。",
+      "tech": [
+        "Python",
+        "Pillow",
+        "tkinter"
+      ],
+      "requirements": [
+        "图片裁剪与缩放",
+        "滤镜效果",
+        "添加水印",
+        "批量处理",
+        "格式转换"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "聊天机器人",
+      "domain": "AI",
+      "description": "开发一个基于规则和模式匹配的智能聊天机器人。",
+      "tech": [
+        "Python",
+        "re",
+        "json",
+        "Flask"
+      ],
+      "requirements": [
+        "意图识别",
+        "规则引擎",
+        "上下文管理",
+        "知识库管理",
+        "Web界面"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "任务管理系统",
+      "domain": "效率",
+      "description": "开发任务管理和待办事项系统，支持任务创建、优先级管理、提醒功能。",
+      "tech": [
+        "Python",
+        "SQLite",
+        "Flask",
+        "HTML/CSS"
+      ],
+      "requirements": [
+        "任务增删改查",
+        "优先级设置",
+        "截止日期管理",
+        "任务分类",
+        "完成度统计"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "数据可视化仪表盘",
+      "domain": "数据",
+      "description": "开发交互式数据可视化仪表盘，展示多维度数据分析结果。",
+      "tech": [
+        "Python",
+        "Flask",
+        "Chart.js",
+        "pandas"
+      ],
+      "requirements": [
+        "数据导入",
+        "多种图表类型",
+        "交互式筛选",
+        "实时刷新",
+        "数据导出"
+      ]
+    }
+  ],
+  "course_design": [
+    {
+      "id": 11,
+      "title": "贪吃蛇游戏",
+      "domain": "游戏",
+      "is_pygame": true,
+      "description": "使用Pygame开发经典贪吃蛇游戏，包含游戏逻辑、碰撞检测、分数系统、难度递增等功能。",
+      "tech": [
+        "Python",
+        "Pygame"
+      ],
+      "requirements": [
+        "蛇的移动控制",
+        "食物随机生成",
+        "碰撞检测",
+        "分数系统",
+        "难度递增",
+        "游戏暂停/重开",
+        "排行榜"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "股票分析系统",
+      "domain": "金融",
+      "is_pygame": false,
+      "description": "开发股票数据分析系统，支持K线图显示、技术指标计算、趋势预测。",
+      "tech": [
+        "Python",
+        "pandas",
+        "matplotlib",
+        "tushare"
+      ],
+      "requirements": [
+        "股票数据获取",
+        "K线图绘制",
+        "MA/MACD等指标",
+        "趋势分析",
+        "风险评估",
+        "投资组合分析"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "企业财务报表生成器",
+      "domain": "财务",
+      "is_pygame": false,
+      "description": "开发企业财务报表自动生成系统，支持资产负债表、利润表、现金流量表的生成和分析。",
+      "tech": [
+        "Python",
+        "openpyxl",
+        "pandas",
+        "Flask"
+      ],
+      "requirements": [
+        "数据录入",
+        "资产负债表生成",
+        "利润表生成",
+        "现金流量表",
+        "财务比率分析",
+        "报表导出PDF"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "太空射击游戏",
+      "domain": "游戏",
+      "is_pygame": true,
+      "description": "使用Pygame开发太空射击游戏，包含玩家飞船控制、敌人AI、道具系统、Boss战等。",
+      "tech": [
+        "Python",
+        "Pygame"
+      ],
+      "requirements": [
+        "玩家飞船控制",
+        "子弹发射系统",
+        "敌人AI",
+        "道具掉落",
+        "Boss关卡",
+        "音效与特效",
+        "存档系统"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "能源消耗监控系统",
+      "domain": "能源",
+      "is_pygame": false,
+      "description": "开发能源消耗监控和分析平台，支持用电量统计、能耗预测、节能建议生成。",
+      "tech": [
+        "Python",
+        "Flask",
+        "pandas",
+        "matplotlib",
+        "SQLite"
+      ],
+      "requirements": [
+        "能源数据录入",
+        "实时监控仪表盘",
+        "消耗趋势分析",
+        "异常检测报警",
+        "节能方案建议",
+        "报表导出"
+      ]
+    }
+  ]
+}

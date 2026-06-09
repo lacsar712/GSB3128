@@ -1,0 +1,216 @@
+{
+  "syllabus": [
+    {
+      "chapter": 1,
+      "title": "Selenium概述与环境搭建",
+      "sections": [
+        "Selenium简介与发展历史",
+        "Selenium组件介绍(WebDriver/IDE/Grid)",
+        "Python环境配置",
+        "ChromeDriver安装与配置",
+        "第一个Selenium脚本"
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "元素定位技术",
+      "sections": [
+        "ID定位",
+        "Name定位",
+        "Class Name定位",
+        "Tag Name定位",
+        "Link Text定位",
+        "CSS Selector定位",
+        "XPath定位",
+        "定位策略最佳实践"
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "浏览器操作",
+      "sections": [
+        "浏览器窗口操作",
+        "导航操作",
+        "Cookie管理",
+        "截图功能",
+        "JavaScript执行"
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "元素交互操作",
+      "sections": [
+        "点击与输入",
+        "下拉框操作",
+        "复选框与单选框",
+        "文件上传",
+        "拖拽操作",
+        "鼠标悬停与右键"
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "等待机制",
+      "sections": [
+        "强制等待",
+        "隐式等待",
+        "显式等待",
+        "FluentWait",
+        "自定义等待条件"
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "高级操作",
+      "sections": [
+        "Frame/iFrame切换",
+        "多窗口处理",
+        "Alert弹框处理",
+        "ActionChains动作链",
+        "Keys键盘操作"
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Page Object模式",
+      "sections": [
+        "PO模式概念",
+        "BasePage设计",
+        "页面类实现",
+        "测试类组织",
+        "PO模式最佳实践"
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "测试框架集成",
+      "sections": [
+        "unittest框架",
+        "pytest框架",
+        "测试夹具(Fixtures)",
+        "参数化测试",
+        "测试报告生成"
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "数据驱动测试",
+      "sections": [
+        "CSV数据驱动",
+        "Excel数据驱动",
+        "JSON数据驱动",
+        "数据库数据驱动",
+        "数据驱动框架设计"
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "Selenium Grid",
+      "sections": [
+        "Grid架构",
+        "Hub与Node配置",
+        "并行测试执行",
+        "Docker化Grid",
+        "跨浏览器测试"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Selenium环境搭建与Hello World",
+      "duration": "25:30",
+      "chapter": 1
+    },
+    {
+      "id": 2,
+      "title": "八大元素定位方法详解",
+      "duration": "35:20",
+      "chapter": 2
+    },
+    {
+      "id": 3,
+      "title": "XPath与CSS高级定位技巧",
+      "duration": "30:15",
+      "chapter": 2
+    },
+    {
+      "id": 4,
+      "title": "浏览器窗口与导航操作实战",
+      "duration": "22:40",
+      "chapter": 3
+    },
+    {
+      "id": 5,
+      "title": "表单元素交互操作全解",
+      "duration": "28:50",
+      "chapter": 4
+    },
+    {
+      "id": 6,
+      "title": "文件上传与拖拽操作",
+      "duration": "20:30",
+      "chapter": 4
+    },
+    {
+      "id": 7,
+      "title": "三种等待机制深度对比",
+      "duration": "32:15",
+      "chapter": 5
+    },
+    {
+      "id": 8,
+      "title": "Frame切换与多窗口处理",
+      "duration": "25:45",
+      "chapter": 6
+    },
+    {
+      "id": 9,
+      "title": "ActionChains高级操作",
+      "duration": "22:10",
+      "chapter": 6
+    },
+    {
+      "id": 10,
+      "title": "Page Object设计模式实战",
+      "duration": "40:20",
+      "chapter": 7
+    },
+    {
+      "id": 11,
+      "title": "pytest框架集成Selenium",
+      "duration": "35:30",
+      "chapter": 8
+    },
+    {
+      "id": 12,
+      "title": "参数化测试与测试报告",
+      "duration": "28:15",
+      "chapter": 8
+    },
+    {
+      "id": 13,
+      "title": "数据驱动测试框架搭建",
+      "duration": "33:40",
+      "chapter": 9
+    },
+    {
+      "id": 14,
+      "title": "Selenium Grid分布式测试",
+      "duration": "30:25",
+      "chapter": 10
+    },
+    {
+      "id": 15,
+      "title": "CI/CD集成与自动化测试实战",
+      "duration": "38:50",
+      "chapter": 10
+    },
+    {
+      "id": 16,
+      "title": "Selenium最佳实践与常见问题",
+      "duration": "26:30",
+      "chapter": 10
+    }
+  ]
+}

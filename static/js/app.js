@@ -501,7 +501,7 @@ async function showResults(eid) {
     <div class="stat-card"><div class="num">${r.stats.min}</div><div class="label">最低分</div></div>
     <div class="stat-card"><div class="num">${r.stats.pass_rate}%</div><div class="label">及格率</div></div>
   </div><div class="table-wrap"><table><tr><th>排名</th><th>姓名</th><th>分数</th><th>状态</th><th>交卷时间</th></tr>
-  ${r.results.map(s => `<tr><td>${s.rank}</td><td>${s.name}</td><td><strong style="color:${s.score >= 60 ? 'var(--success)' : 'var(--danger)'}${''}">${s.score}</strong></td><td><span class="tag ${s.status === '已批阅' ? 'tag-success' : 'tag-warning'}">${s.status}</span></td><td>${s.submit_time}</td></tr>`).join('')}</table></div>`
+  ${r.results.map(s => `<tr><td>${s.rank}</td><td>${s.name}</td><td><strong style="color:${s.score >= r.stats.pass_score ? 'var(--success)' : 'var(--danger)'}${''}">${s.score}</strong></td><td><span class="tag ${s.status === '已批阅' ? 'tag-success' : 'tag-warning'}">${s.status}</span></td><td>${s.submit_time}</td></tr>`).join('')}</table></div>`
     , `<button class="btn btn-outline" onclick="exportResults('${eid}');closeModal()"><i class="ri-download-line"></i> 导出</button><button class="btn btn-primary" onclick="closeModal()">关闭</button>`, 'modal-lg')
 }
 async function showManualGrade(eid) {

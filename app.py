@@ -235,10 +235,12 @@ def exam_results_api(eid):
     results.sort(key=lambda x: -x['score'])
     for i, r in enumerate(results): r['rank'] = i + 1
     avg = sum(r['score'] for r in results) / max(len(results),1)
+    pass_score = exam.get('grading_settings', {}).get('pass_score', 60)
     return jsonify({"results": results, "stats": {"avg": round(avg,1),
                      "max": max((r['score'] for r in results), default=0),
                      "min": min((r['score'] for r in results), default=0),
-                     "pass_rate": round(sum(1 for r in results if r['score']>=60)/max(len(results),1)*100,1),
+                     "pass_rate": round(sum(1 for r in results if r['score']>=pass_score)/max(len(results),1)*100,1),
+                     "pass_score": pass_score,
                      "total": len(results)}})
 
 @app.route('/api/exams/<eid>/grade', methods=['POST'])
